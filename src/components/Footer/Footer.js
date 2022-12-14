@@ -7,17 +7,16 @@ const Footer = (props) => {
         <section className="footer__section">
             <header className="footer__header">
                 <div className="footer__div">
-                    <h1>Neem hier jouw inspiratie pakje</h1>
-                    <p>Base Set 2</p>
-                    <p>Neo Discovery</p>
-                    <p>Neo Revelation</p>
-                    <p>Legendary Collection</p>
+                    <h1>Naviagatie</h1>
+                    <p>Home</p>
+                    <p>Over</p>
+                    <p>Features</p>
+                    <p>Contact</p>
                 </div>
                 <div className="footer__div">
-                    <h1>Oude pakjes</h1>
-                    <p>Jungle</p>
-                    <p>Wizards of the Coast Promos</p>
-                    <p>Fossil</p>
+                    <h1>Support</h1>
+                    <p>Bel ons via 020-0354834</p>
+                    <p>pokemoncards@help.nl</p>
                 </div>
                 <div className="footer__div">
                     <h1>Jouw account</h1>

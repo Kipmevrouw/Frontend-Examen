@@ -1,16 +1,15 @@
 .card{
     width: 40rem;
     min-height: 30rem;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     box-shadow: -0 1rem 4rem 0 rgb(0, 0, 0, 0.2);
     padding: 2rem;
     background-color: rgba(255, 230, 132,0.5);
-
 }
 .card2{
     width: 40rem;
     min-height: 30rem;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     box-shadow: -0 1rem 5rem 0 rgba(255, 255, 255, 0.5);
     padding: 2rem;
     background-color: #ffcc03;
@@ -19,12 +18,10 @@
 }
 
 .card2:hover{
-    width: 40rem;
-    min-height: 30rem;
-    border-radius: 0.5rem;
+    background-color: #e0b403;
     box-shadow: -0 1rem 10rem 0 rgba(255, 255, 255, 0.5);
-    padding: 2rem;
-
+    padding: 2rem;  
+    cursor: pointer;
 }
 
 .card__figure{
@@ -41,15 +38,15 @@
     object-fit: cover;
     padding-bottom: 2rem;
 }
-.card__section{
-    height: 50%;
-    padding: 2rem;
-}
 
 .card__middel{
     box-shadow: 0rem 2rem 5rem 0rem black;
 }
 
+.card__section{
+    text-align: right;
+    padding-top: 50%;
+}
 .card__top{
     padding-bottom: 1rem;
     font-size: 2rem;

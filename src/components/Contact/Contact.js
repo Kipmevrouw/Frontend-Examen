@@ -12,7 +12,7 @@ class Contact extends React.Component {
     render() {
         return (
             <section className="contact__alles">
-                <div >
+                <section className='contact__formulier'>
                     <form className="contact__form" id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                         <h2 className="contact__h2" >Contact</h2>
                             <div className="form-group">
@@ -29,10 +29,19 @@ class Contact extends React.Component {
                             </div>
                             <button type="submit" className="contact__button">Verzenden</button>
                         </form>
-                </div>
-                <div className='contact__img'>
+                </section>
+                <section className='contact__vragen'>
+                    <h1>Vragen?</h1>
+                    <p>Stel gerust uw vragen via de contact form. 
+                        WIj zullen u gerust helpen en wij hebben op alles een antwoord.
+                        Wacht daarom niet te lang en kom snel met uw vraag. 
+                    </p>
+                    <br></br>
+                    <p>We zijn geopend tussen 9:00 tot 18:00</p>
+                </section>
+                <section className='contact__img'>
                     <img src={"/img/" + this.props.imageF} alt="Foto van Becky."/>
-                </div>
+                </section>
             </section>
         );
     }

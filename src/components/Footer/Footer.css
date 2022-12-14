@@ -15,6 +15,12 @@
     
 }
 
+.footer__div h1{
+    font-size: 2rem;
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: 0.5rem;
+}
+
 .footer__main{
     background-color: rgb(71, 71, 71);
     display: flex;

@@ -13,7 +13,7 @@ const Card = (props) => {
                     <li className="card__li">{props.extra}</li>
                 </figure>
                 <section class="card__section">
-                    <button class="header__button">{props.buttonCard || "Default"}</button>
+                    <button class="header__button card__button">{props.buttonCard || "Default"}</button>
                 </section>
             </article>
         </section>

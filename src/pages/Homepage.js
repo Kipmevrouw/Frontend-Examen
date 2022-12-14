@@ -30,9 +30,6 @@ const HomePage = () => {
                 imageM="Cards.jpg"  >
 
             </Section>
-            <Art imageA="Favo.png">
-
-            </Art>
             <Favo imageBulbasaur="bulbasaur.png"
                 imagePoliwrath="polli.png"
                 imageGengar="gengar.png"
@@ -41,6 +38,9 @@ const HomePage = () => {
             
             >
             </Favo>
+            <Art imageA="Favo.png">
+
+            </Art>
             <CardSection hoofdTitel="Abbonementen">
                 <Card image="evolving.png"
                     prijs="Per maand = €12,99"
@@ -48,7 +48,6 @@ const HomePage = () => {
                     buttonCard="Medium"
                 />
                 <Card2
-                    top="Meeste gekozen" 
                     image="battlestyles.png"
                     prijs="Per maand = €21,99"
                     extra="Ontvang per maand 4 pokemonpakjes."
