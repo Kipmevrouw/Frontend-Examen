@@ -1,0 +1,36 @@
+.footer_section{
+
+}
+
+.footer__header{
+    padding: 5rem;
+    display: flex;
+    background-color: #F0EBE3;
+    justify-content: space-around;
+}
+
+.footer__div{
+    margin-bottom: 10rem;
+    margin-right: 1rem;
+    
+}
+
+.footer__main{
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    color: #eee;
+    padding: 5rem;
+    justify-content: space-around;
+}
+
+.footer__disclaimer{
+
+}
+
+.footer__icons{
+    font-size: 3rem;
+}
+
+.footer__apart__icon{
+    margin-left: 1rem;
+}

@@ -1,0 +1,58 @@
+.contact__alles{
+    display:flex;
+    padding: 5rem;
+    max-width: 100%;
+    padding: 5rem 5rem;
+    padding-left: 22rem;
+    padding-right: 22rem;
+    justify-content: space-between;
+}
+
+.contact__h2{
+    font-size: 5rem;
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: 0.5rem;
+}
+
+.contact__form{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.form-group{
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.contact__text{
+    font-size: 1.5rem;
+}
+
+.form-control{
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 30rem;
+}
+
+.contact__button{
+    font-size: 2.0rem;
+    background: rgb(0, 81, 255);
+    border: none;
+    padding: 1rem 4rem;
+    border-radius: 3rem;
+    transition: 0.2s;
+    color: white;
+}
+
+.contact__button:hover{
+    background: rgb(0, 50, 158);
+    cursor: pointer;
+}
+
+.contact__img img{
+    padding: 2rem;
+    height: 45rem;
+    border-radius: 5rem;
+}

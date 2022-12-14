@@ -1,0 +1,63 @@
+.header{
+    height: 100vh;
+    width: 100%;
+    background: url("/public/img/pika.jpg");
+
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    gap: 4rem; 
+}
+
+.header__h1{
+    font-size: 10rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    padding-top: 20rem;
+    letter-spacing: 0.5rem;
+    font-weight: lighter;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+.header__h2{
+    padding-top: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.header__button__packs{
+    border-radius: 2rem;
+    background: rgb(255, 182, 23, 00);
+    border: none;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.header__button__packs img{
+    height: 12rem;
+}
+
+
+.header__button__packs:hover{
+    cursor: pointer;
+}
+@media screen and (max-width:1000px){
+    .header{
+        background-image: none;
+        background: url("/public/img/header.jpg");
+    }
+
+    .header__h1{
+        font-size: 6rem;
+        font-weight: 600;
+        color: rgb(71, 71, 71);
+        padding-top: 9rem;
+    }
+}
