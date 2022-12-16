@@ -49,15 +49,10 @@
     cursor: pointer;
 }
 @media screen and (max-width:1000px){
-    .header{
-        background-image: none;
-        background: url("/public/img/header.jpg");
-    }
-
     .header__h1{
         font-size: 6rem;
         font-weight: 600;
-        color: rgb(71, 71, 71);
+        color: #eee;
         padding-top: 9rem;
     }
 }

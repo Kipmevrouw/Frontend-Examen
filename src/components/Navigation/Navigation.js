@@ -1,6 +1,7 @@
 import "./Navigation.css";
 import React from "react";
 
+
 function Navigation(props) {
     return (
       <>
@@ -10,7 +11,7 @@ function Navigation(props) {
             </figure>
             <section className="navigation__links">
                 <div className="navbarKopjeLink">
-                  <a href="">Home</a>
+                <a href="/">Home</a>
                 </div>
                 <div className="navbarKopjeLink">
                   <a href="">Over</a>
