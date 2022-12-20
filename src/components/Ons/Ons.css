@@ -21,14 +21,14 @@
 }
 
 
-.section__h2{
+.ons__h2{
     color: black;
     font-size: 5rem;
     font-family: 'Pokemon Solid', sans-serif;
     letter-spacing: 0.5rem;
 }
 
-.section__p{
+.ons__p{
     padding-top: 2rem;
     color: gray;
     font-size: 2rem;
@@ -36,14 +36,17 @@
 
 @media screen and (max-width: 900px) {
     .overons{
-        padding: 1rem;
+        padding: 0rem;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 5rem;
     }
-    .section__h2{
+    .ons__h2{
         text-align: center;
+        font-size: 3rem;
     
     }
-    .section__overons{
-        padding-left: 0rem;
+    .overons__wrapper{
+        width:90%;
     }
 }

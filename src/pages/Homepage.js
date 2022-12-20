@@ -2,7 +2,7 @@ import Navigation from "../components/Navigation/Navigation";
 import Header from "../components/Header/Header";
 import Card from "../components/Card/Card";
 import Card2 from "../components/Card/Card2";
-import Section from "../components/Section/Section";
+import Ons from "../components/Ons/Ons";
 import Contact from "../components/Contact/Contact";
 import CardSection from "../components/CardSection/CardSection";
 import Footer from "../components/Footer/Footer";
@@ -20,7 +20,7 @@ const HomePage = () => {
                 smallTitle="Klik hier om in te loggen:"
                 buttonText="Login" />
 
-            <Section headerTitle="Over ons:"
+            <Ons headerTitle="Over ons:"
                 stukjeTekst="Pokemon-Spekky is begonnen met pokemonkaarten verkopen in 
                                   1997. Ik vond het vroeger als kind geweldig om mee te ruilen
                                   en om er mee te spelen. Nu is het een bedrijf geworden waar ik
@@ -29,7 +29,7 @@ const HomePage = () => {
                                   "
                 imageM="Cards.jpg"  >
 
-            </Section>
+            </Ons>
             <Favo imageBulbasaur="bulbasaur.png"
                 imagePoliwrath="polli.png"
                 imageGengar="gengar.png"

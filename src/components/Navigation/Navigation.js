@@ -35,7 +35,8 @@ export default function Navigation(props){
             </div>
             <figure class="navigation__logo">
               <img className="nav__img" src={"/img/" + props.image} alt="Pokemon logo"/>
-            </figure>  
+            </figure>
+            <button class="header__button">{props.buttonText || "Default"}</button>  
           </section>
         </nav>
 
