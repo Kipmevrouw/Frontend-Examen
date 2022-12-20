@@ -45,7 +45,7 @@ export default function Navigation(props){
                 .navigation__web{
                   display: ${hamburgerOpen ? 'inline' : 'none'};
                   height: 100vh;
-                  width: 50vw;
+                  width: 20rem;
                   margin-top: 80px;
                   position: absolute;
                   
