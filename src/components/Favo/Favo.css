@@ -45,3 +45,10 @@ align-items: center;
 .Art__img{
     max-width: 100%;
 }
+
+@media screen and (max-width: 900px) {
+    .favo__alles{
+        flex-direction: column-reverse;
+    }
+
+}
