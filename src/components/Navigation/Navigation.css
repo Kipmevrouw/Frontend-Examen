@@ -1,4 +1,4 @@
-.navigation{
+.navigation__web{
     width: 100%;
     background: white;
     display: flex;
@@ -8,6 +8,7 @@
     text-align: center;
     position: fixed;
     box-shadow: -0 1rem 4rem 0 rgb(0, 0, 0, 0.2);
+    height: 10vh;
 }
 
 .nav__img{
@@ -16,6 +17,7 @@
 
 .navigation__links{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .navigation__links a{
@@ -39,7 +41,7 @@
     border: none;
     padding: 1rem 4rem;
     border-radius: 3rem;
-    transition: 0.2s;
+    transition: 0s;
     color: white;
     font-family: 'Share Tech Mono', monospace;
 }
@@ -49,17 +51,12 @@
     cursor: pointer;
 }
 @media screen and (max-width:1000px){
-    .navigation{
-        flex-wrap: wrap;
-        gap: 1rem;
-        position: relative;
-        width: 100%;
-    }
-    .navigation ul{
+    .navigation__mobiel{
         display: flex;
-        gap: 2rem;
-    }
-    .nav__home{
-        display: none;
+        gap: 8rem;
+        height: 10vh;
+        align-items: center;
+        text-align: center;
+        justify-content: left;
     }
 }
