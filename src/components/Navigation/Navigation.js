@@ -48,7 +48,7 @@ export default function Navigation(props){
                   width: 20rem;
                   margin-top: 80px;
                   position: absolute;
-                  
+                  width: 100%;
                 }
               }
 

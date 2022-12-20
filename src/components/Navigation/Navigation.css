@@ -58,5 +58,6 @@
         align-items: center;
         text-align: center;
         justify-content: left;
+        justify-content: space-between;
     }
 }
