@@ -1,7 +1,3 @@
-.footer_section{
-
-}
-
 .footer__header{
     padding: 5rem;
     display: flex;
@@ -29,14 +25,32 @@
     justify-content: space-around;
 }
 
-.footer__disclaimer{
-
-}
-
 .footer__icons{
     font-size: 3rem;
 }
 
 .footer__apart__icon{
     margin-left: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .footer__header{
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+    .div1{
+        display: none;
+    }
+    .footer__div{
+        margin-bottom: 3rem;
+        
+    }
+    .footer__main{
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
 }

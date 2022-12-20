@@ -2,3 +2,9 @@
     background: url("/public/img/Favo.png");
     padding: 30rem;
 }
+
+@media screen and (max-width: 900px) {
+    .Art__section{
+        display: none;
+    }
+}
