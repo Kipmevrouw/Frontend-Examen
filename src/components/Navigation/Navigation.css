@@ -44,6 +44,7 @@
     transition: 0s;
     color: white;
     font-family: 'Share Tech Mono', monospace;
+    text-decoration: none;
 }
 
 .header__button:hover{

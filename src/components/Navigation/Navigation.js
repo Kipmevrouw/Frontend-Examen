@@ -22,12 +22,12 @@ export default function Navigation(props){
               </figure>
               <section className="navigation__links">
                     <a href="/"className="navbarKopjeLink">Home</a>
-                    <a href="" className="navbarKopjeLink">Over</a>
-                    <a href="" className="navbarKopjeLink">Features</a>
-                    <a href="" className="navbarKopjeLink">Abbonementen</a>
-                    <a href="" className="navbarKopjeLink">Contact</a>
+                    <a href="/Ons" className="navbarKopjeLink">Over</a>
+                    <a href="/Features" className="navbarKopjeLink">Features</a>
+                    <a href="/Abbonementen" className="navbarKopjeLink">Abbonementen</a>
+                    <a href="/Contact" className="navbarKopjeLink">Contact</a>
               </section>            
-              <button class="header__button">{props.buttonText || "Default"}</button>
+              <a href="/Login" class="header__button">{props.buttonText || "Default"}</a>
           </section>
           <section className="navigation__mobiel">
               <div onClick={toggleHamburger}>
@@ -36,7 +36,7 @@ export default function Navigation(props){
             <figure class="navigation__logo">
               <img className="nav__img" src={"/img/" + props.image} alt="Pokemon logo"/>
             </figure>
-            <button class="header__button">{props.buttonText || "Default"}</button>  
+            <a href="/Login" class="header__button">{props.buttonText || "Default"}</a>  
           </section>
         </nav>
 

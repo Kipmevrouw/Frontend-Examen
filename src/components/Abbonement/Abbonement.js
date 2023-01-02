@@ -1,7 +1,7 @@
-import "./CardSection.css";
+import "./Abbonement.css";
 import React from "react";
 
-const CardSection = (props) => {
+const Abbonement = (props) => {
     return(
         <section class="cardsection">
             <div class="cardsection__wrapper">
@@ -11,4 +11,4 @@ const CardSection = (props) => {
     )
 }
 
-export default CardSection;
+export default Abbonement;

@@ -4,7 +4,7 @@ import Card from "../components/Card/Card";
 import Card2 from "../components/Card/Card2";
 import Ons from "../components/Ons/Ons";
 import Contact from "../components/Contact/Contact";
-import CardSection from "../components/CardSection/CardSection";
+import Abbonement from "../components/Abbonement/Abbonement";
 import Footer from "../components/Footer/Footer";
 import Favo from "../components/Favo/Favo";
 import Art from "../components/Art/Art";
@@ -20,7 +20,8 @@ const HomePage = () => {
                 smallTitle="Klik hier om in te loggen:"
                 buttonText="Login" />
 
-            <Ons headerTitle="Over ons:"
+            <Ons 
+            headerTitle="Over ons:"
                 stukjeTekst="Pokemon-Spekky is begonnen met pokemonkaarten verkopen in 
                                   1997. Ik vond het vroeger als kind geweldig om mee te ruilen
                                   en om er mee te spelen. Nu is het een bedrijf geworden waar ik
@@ -30,7 +31,8 @@ const HomePage = () => {
                 imageM="Cards.jpg"  >
 
             </Ons>
-            <Favo imageBulbasaur="bulbasaur.png"
+            <Favo 
+                imageBulbasaur="bulbasaur.png"
                 imagePoliwrath="polli.png"
                 imageGengar="gengar.png"
                 imageLapras="lap.png"
@@ -41,7 +43,7 @@ const HomePage = () => {
             <Art imageA="Favo.png">
 
             </Art>
-            <CardSection hoofdTitel="Abbonementen">
+            <Abbonement hoofdTitel="Abbonementen">
                 <Card image="evolving.png"
                     prijs="Per maand = €12,99"
                     extra="Ontvang per maand 2 pokemonpakjes."
@@ -59,10 +61,11 @@ const HomePage = () => {
                     buttonCard="Basic"
                 />
 
-            </CardSection>
+            </Abbonement>
             <Contact 
             imageF="ring.jpg"
-            />
+            >
+            </Contact>    
             <Footer 
             buttonText="Login"
             />
