@@ -1,5 +1,6 @@
 import "./LoginForm.css";
 import React from "react";
+import Collectiepage from "../../pages/Collectiepage";
 import {useState} from 'react';
 
 const LoginForm = (props) => {
@@ -43,31 +44,36 @@ const LoginForm = (props) => {
       name === errorMessages.name && (
         <div className="error">{errorMessages.message}</div>
       );
-  
+
     const renderForm = (
-      <div className="form">
-        <form onSubmit={handleSubmit}>
-          <div className="input-container">
-            <label>Username </label>
-            <input type="text" name="uname" required />
-            {renderErrorMessage("uname")}
-          </div>
-          <div className="input-container">
-            <label>Password </label>
-            <input type="password" name="pass" required />
-            {renderErrorMessage("pass")}
-          </div>
-          <div className="button-container">
-            <input type="submit" />
-          </div>
-        </form>
-      </div>
+      <section className="form__">
+        <div>
+          <img className="form__img" src={"/img/" + props.imageForm} alt="Pokemon logo"/>
+        </div>
+        <div className="form">
+          <form onSubmit={handleSubmit}>
+            <div className="input-container">
+              <label>Username </label>
+              <input type="text" name="uname" required />
+              {renderErrorMessage("uname")}
+            </div>
+            <div className="input-container">
+              <label>Password </label>
+              <input type="password" name="pass" required />
+              {renderErrorMessage("pass")}
+            </div>
+            <div className="button-container">
+              <input type="submit" />
+            </div>
+          </form>
+        </div>
+      </section>
     );
   
     return (
+
         <div className="app">
         <div className="login-form">
-          <div className="title">Ingelogd</div>
           {isSubmitted ? <div><a href="/Collectiepage" className="">Klik hier</a> om naar je collectiepagina te gaan.</div> : renderForm}
         </div>
       </div>

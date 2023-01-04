@@ -5,29 +5,45 @@
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: 0.5rem;
     height: 100vh;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    background-color: #f8f9fd;
+    width: 100%;
+    background: url("/public/img/pika.jpg");
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 5rem;
+  }
+
+  .form__wrapper{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
   }
   
   input[type="text"],
   input[type="password"] {
-    height: 25px;
+    height: 40px;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 0.5rem;
   }
   
   input[type="submit"] {
-    margin-top: 10px;
-    cursor: pointer;
-    font-size: 15px;
-    background: #01d28e;
-    border: 1px solid #01d28e;
-    color: #fff;
-    padding: 10px 20px;
+    font-size: 2.0rem;
+    background: rgb(0, 81, 255);
+    border: none;
+    padding: 1rem 4rem;
+    border-radius: 3rem;
+    transition: 0s;
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    text-decoration: none;
   }
   
   input[type="submit"]:hover {
-    background: #6cf0c2;
+    background: rgb(0, 50, 158);
+    cursor: pointer;
   }
   
   .button-container {
@@ -38,7 +54,7 @@
   .login-form {
     background-color: white;
     padding: 2rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
   }
   
   .list-container {
@@ -50,14 +66,15 @@
     font-size: 12px;
   }
   
-  .title {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
   
   .input-container {
     display: flex;
     flex-direction: column;
     gap: 8px;
     margin: 10px;
+  }
+
+  .form__img{
+    height: 30rem;
+    padding: 10px;
   }

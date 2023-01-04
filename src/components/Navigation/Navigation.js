@@ -21,11 +21,11 @@ export default function Navigation(props){
                 <img className="nav__img" src={"/img/" + props.image} alt="Pokemon logo"/>
               </figure>
               <section className="navigation__links">
-                    <a href="/"className="navbarKopjeLink">Home</a>
-                    <a href="/Ons" className="navbarKopjeLink">Over</a>
-                    <a href="/Features" className="navbarKopjeLink">Features</a>
-                    <a href="/Abbonementen" className="navbarKopjeLink">Abbonementen</a>
-                    <a href="/Contact" className="navbarKopjeLink">Contact</a>
+                    <a href="/"className="navbarKopjeLink">{props.nav1 || ""}</a>
+                    <a href="/Ons" className="navbarKopjeLink">{props.nav2 || ""}</a>
+                    <a href="/Features" className="navbarKopjeLink">{props.nav3 || ""}</a>
+                    <a href="/Abbonementen" className="navbarKopjeLink">{props.nav4 || ""}</a>
+                    <a href="/Contact" className="navbarKopjeLink">{props.nav5 || ""}</a>
               </section>            
               <a href="/Login" class="header__button">{props.buttonText || "Default"}</a>
           </section>

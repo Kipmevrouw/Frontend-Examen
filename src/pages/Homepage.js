@@ -13,6 +13,11 @@ const HomePage = () => {
     return (
         <>
             <Navigation
+                nav1="Home"
+                nav2="Over"
+                nav3="Features"
+                nav4="Abbonementen"
+                nav5="Contact"
                 image="logo.png"
                 buttonText="Login" />
             <Header
