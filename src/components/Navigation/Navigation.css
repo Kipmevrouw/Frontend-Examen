@@ -8,7 +8,7 @@
     text-align: center;
     position: fixed;
     box-shadow: -0 1rem 4rem 0 rgb(0, 0, 0, 0.2);
-    height: 10vh;
+    height: 100px;
 }
 
 .nav__img{
@@ -55,7 +55,7 @@
     .navigation__mobiel{
         display: flex;
         gap: 8rem;
-        height: 10vh;
+        height: 100px;
         align-items: center;
         text-align: center;
         justify-content: left;
