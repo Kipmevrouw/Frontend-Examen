@@ -1,4 +1,3 @@
-import "./Collectiepage.css";
 import React from "react";
 
 const Collectiepage = () => {

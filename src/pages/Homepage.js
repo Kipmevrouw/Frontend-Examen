@@ -1,13 +1,13 @@
 import Navigation from "../components/Navigation/Navigation";
-import Header from "../components/Header/Header";
-import Card from "../components/Card/Card";
-import Card2 from "../components/Card/Card2";
-import Ons from "../components/Ons/Ons";
-import Contact from "../components/Contact/Contact";
-import Abbonement from "../components/Abbonement/Abbonement";
+import Header from "../components/HomePageComponenten/Header/Header";
+import Card from "../components/HomePageComponenten/Card/Card";
+import Card2 from "../components/HomePageComponenten/Card/Card2";
+import Ons from "../components/HomePageComponenten/Ons/Ons";
+import Contact from "../components/HomePageComponenten/Contact/Contact";
+import Abbonement from "../components/HomePageComponenten/Abbonement/Abbonement";
 import Footer from "../components/Footer/Footer";
-import Favo from "../components/Favo/Favo";
-import Art from "../components/Art/Art";
+import Favo from "../components/HomePageComponenten/Favo/Favo";
+import Art from "../components/HomePageComponenten/Art/Art";
 import React from "react";
 const HomePage = () => {
     return (

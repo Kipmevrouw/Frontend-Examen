@@ -1,6 +1,6 @@
 import "./Navigation.css";
-import "../HomePageComponenten/HamburgerMenu/HamburgerMenu.css";
-import Hamburger from "../HomePageComponenten/HamburgerMenu/HamburgerMenu";
+import "../HamburgerMenu/HamburgerMenu.css";
+import Hamburger from "../HamburgerMenu/HamburgerMenu";
 import { useState } from "react";
 import React from "react";
 
