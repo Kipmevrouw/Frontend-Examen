@@ -1,4 +1,4 @@
-import "./HamburgerMenu.css";
+import "./HamburgerMenuHomePage.css";
 
 export default function Hamburger(){
     return(

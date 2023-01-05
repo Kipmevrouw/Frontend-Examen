@@ -1,4 +1,4 @@
-import Navigation from "../components/Navigation/Navigation";
+import NavigationHomePage from "../components/HomePageComponenten/NavigationHomePage/NavigationHomePage";
 import Header from "../components/HomePageComponenten/Header/Header";
 import Card from "../components/HomePageComponenten/Card/Card";
 import Card2 from "../components/HomePageComponenten/Card/Card2";
@@ -12,7 +12,7 @@ import React from "react";
 const HomePage = () => {
     return (
         <>
-            <Navigation
+            <NavigationHomePage
                 nav1="Home"
                 nav2="Over"
                 nav3="Features"

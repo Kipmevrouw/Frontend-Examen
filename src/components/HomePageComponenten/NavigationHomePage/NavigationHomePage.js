@@ -1,11 +1,11 @@
-import "./Navigation.css";
-import "../HamburgerMenu/HamburgerMenu.css";
-import Hamburger from "../HamburgerMenu/HamburgerMenu";
+import "./NavigationHomePage.css";
+import "../HamburgerMenuHomePage/HamburgerMenuHomePage.css";
+import Hamburger from "../HamburgerMenuHomePage/HamburgerMenuHomePage";
 import { useState } from "react";
 import React from "react";
 
 
-export default function Navigation(props){
+export default function NavigationHomePage(props){
 
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
