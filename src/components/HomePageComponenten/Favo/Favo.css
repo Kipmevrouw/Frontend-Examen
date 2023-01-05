@@ -1,0 +1,54 @@
+.favo__alles{
+padding: 5rem;
+justify-content: flex-start;
+display: flex;
+gap: 2rem;
+justify-content: center;
+align-items: center;
+}
+
+.favo__width{
+    width: 20%;
+}
+
+.favo__figure{
+    background-color: #ffe88b;
+    min-height: 28rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    min-width: 20rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.favo__figure h1{
+    letter-spacing: 0.5rem;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+.favo__figure_pre h1{
+    letter-spacing: 0.5rem;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+.favo__figure_pre{
+    background-color: #ffcc03;
+    padding: 1rem;
+    min-width: 20rem;
+    min-height: 28rem;
+    border-radius: 2rem;
+    box-shadow: -0 1rem 4rem 0 rgb(0, 0, 0, 0.2);
+    justify-content: center;
+    text-align: center;
+}
+
+.Art__img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .favo__alles{
+        flex-direction: column-reverse;
+    }
+
+}

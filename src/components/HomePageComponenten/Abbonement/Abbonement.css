@@ -1,0 +1,19 @@
+.cardsection{
+    padding: 5rem;
+}
+
+.cardsection__wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.cardsection__header{
+    padding: 5rem;
+    max-width: 100%;
+    padding: 5rem 5rem;
+    padding-left: 22rem;
+    padding-right: 22rem;
+    justify-content: center;
+    align-items: center;
+}

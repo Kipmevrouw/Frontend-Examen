@@ -1,0 +1,28 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');            
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: white;
+    font-size: 1.6rem;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#page-wrap {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+@media screen and (max-width:1000px){
+
+    
+}
