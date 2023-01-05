@@ -20,7 +20,7 @@ const Footer = (props) => {
                 </div>
                 <div className="footer__div">
                     <h1>Jouw account</h1>
-                    <button class="header__button">{props.buttonText || "Default"}</button>
+                    <a href="/Login" class="header__button">{props.buttonText || "Default"}</a>  
                 </div>
 
             </header>
