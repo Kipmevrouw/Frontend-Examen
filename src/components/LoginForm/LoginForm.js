@@ -53,12 +53,12 @@ const LoginForm = (props) => {
         <div className="form">
           <form onSubmit={handleSubmit}>
             <div className="input-container">
-              <label>Username </label>
+              <label>Gebruikersnaam </label>
               <input type="text" name="uname" required />
               {renderErrorMessage("uname")}
             </div>
             <div className="input-container">
-              <label>Password </label>
+              <label>Wachtwoord </label>
               <input type="password" name="pass" required />
               {renderErrorMessage("pass")}
             </div>

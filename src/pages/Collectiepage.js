@@ -1,8 +1,19 @@
 import React from "react";
+import NavigationCollectiePage from "../components/CollectiePageComponenten/NavigationCollectiePage/NavigationCollectiePage";
 
 const Collectiepage = () => {
     return(
-        <h1>Test voor github</h1>
+        <>
+            <NavigationCollectiePage 
+                nav1="Collectie"
+                nav2="Backlog"
+                nav3="Contact"
+                nav4="Uitloggen"
+                image="logo.png"
+                buttonText="Delen"
+            />
+                
+        </>
     );
 }
 

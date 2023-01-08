@@ -5,7 +5,7 @@ import Card2 from "../components/HomePageComponenten/Card/Card2";
 import Ons from "../components/HomePageComponenten/Ons/Ons";
 import Contact from "../components/HomePageComponenten/Contact/Contact";
 import Abbonement from "../components/HomePageComponenten/Abbonement/Abbonement";
-import Footer from "../components/Footer/Footer";
+import Footer from "../components/HomePageComponenten/Footer/Footer";
 import Favo from "../components/HomePageComponenten/Favo/Favo";
 import Art from "../components/HomePageComponenten/Art/Art";
 import React from "react";
