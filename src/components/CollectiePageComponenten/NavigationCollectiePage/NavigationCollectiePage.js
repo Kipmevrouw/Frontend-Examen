@@ -25,7 +25,6 @@ export default function NavigationCollectiePage(props){
                     <a href="/Ons" className="navbarKopjeLink">{props.nav2 || ""}</a>
                     <a href="/Features" className="navbarKopjeLink">{props.nav3 || ""}</a>
                     <a href="/Abbonementen" className="navbarKopjeLink">{props.nav4 || ""}</a>
-                    <a href="/Contact" className="navbarKopjeLink">{props.nav5 || ""}</a>
               </section>            
               <a href="/Login" class="header__button">{props.buttonText || "Default"}</a>
           </section>

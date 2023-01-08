@@ -1,0 +1,48 @@
+
+.popup{
+    width: 50rem;
+    height: 35rem;
+    background: #fff7f7;
+    border-radius: 1rem;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:4rem;
+    gap: 8rem;
+    border-bottom: 0.2rem solid #eee;
+}
+
+.popup__label{
+    font-size: 120%;
+}
+.popup__wrapper{
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.popup__input{
+    background:none;
+    border:none;
+    color: rgb(0, 0, 0);
+    font-size: 200%;
+    border-bottom: 0.2rem solid #eee;
+    outline:none;
+}
+
+.popup__button{
+    font-size: 2.0rem;
+    background: rgb(0, 81, 255);
+    border: none;
+    padding: 1rem 4rem;
+    border-radius: 3rem;
+    transition: 0s;
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    text-decoration: none;
+}
+
+.popup__button:hover{
+    background: rgb(0, 50, 158);
+    cursor: pointer;
+}

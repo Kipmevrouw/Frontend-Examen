@@ -7,11 +7,13 @@ import { Routes, Route } from "react-router-dom";
 
 const App = () => {
     return(
-        <Routes>
-            <Route path="/" element={<HomePage />}></Route>
-            <Route path="/Login" element={<InlogCollectiePage />}></Route>
-            <Route path="/Collectiepage" element={<Collectiepage />}></Route>
-        </Routes>
+        <>
+            <Routes>
+                <Route path="/" element={<HomePage />}></Route>
+                <Route path="/Login" element={<InlogCollectiePage />}></Route>
+                <Route path="/Collectiepage" element={<Collectiepage />}></Route>
+            </Routes>
+        </>
     );
 }
 

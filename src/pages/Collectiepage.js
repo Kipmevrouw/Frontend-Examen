@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Component } from "react";
+import Dashboard from "../components/CollectiePageComponenten/Collectie/Dashboard/Dashboard";
 import NavigationCollectiePage from "../components/CollectiePageComponenten/NavigationCollectiePage/NavigationCollectiePage";
 
 const Collectiepage = () => {
@@ -12,6 +13,9 @@ const Collectiepage = () => {
                 image="logo.png"
                 buttonText="Delen"
             />
+            <Dashboard
+            />
+            
                 
         </>
     );

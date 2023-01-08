@@ -78,3 +78,8 @@
     height: 30rem;
     padding: 10px;
   }
+
+  .Collectie__klikhier{
+    color: black;
+    text-decoration: line-through;
+  }
