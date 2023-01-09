@@ -12,6 +12,23 @@ export default function NavigationCollectiePage(props){
     const toggleHamburger = () =>{
       setHamburgerOpen(!hamburgerOpen)
     }
+
+    const handleShareButton = () => {
+      if (navigator.share) {
+        navigator
+          .share({
+            url: `https://localhost:3000`
+          })
+          .then(() => {
+            console.log("Gedeeld!");
+          })
+          .catch(() => {
+            console.log("Delen is niet gelukt");
+          });
+      } else {
+        console.log("Oeps! Je ondersteund geen Web Share API");
+      }
+    };
     return (
       <>
 
@@ -26,7 +43,7 @@ export default function NavigationCollectiePage(props){
                     <a href="/Features" className="navbarKopjeLink">{props.nav3 || ""}</a>
                     <a href="/Abbonementen" className="navbarKopjeLink">{props.nav4 || ""}</a>
               </section>            
-              <a href="/Login" class="header__button">{props.buttonText || "Default"}</a>
+              <button class="header__button" onClick={handleShareButton} className="header__button" type="button" title="Share this article">{props.buttonText || "Default"}</button> 
           </section>
           <section className="navigation__mobiel">
               <div onClick={toggleHamburger}>
@@ -35,7 +52,7 @@ export default function NavigationCollectiePage(props){
             <figure class="navigation__logo">
               <img className="nav__img" src={"/img/" + props.image} alt="Pokemon logo"/>
             </figure>
-            <a href="/Login" class="header__button">{props.buttonText || "Default"}</a>  
+            <button class="header__button" onClick={handleShareButton} className="header__button" type="button" title="Share this article">{props.buttonText || "Default"}</button> 
           </section>
         </nav>
 
