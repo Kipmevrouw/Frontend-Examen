@@ -11,7 +11,7 @@ class Contact extends React.Component {
     }
     render() {
         return (
-            <section className="contact__alles">
+            <section className="contact__alles" id='contact'>
                 <section className='contact__formulier'>
                     <form className="contact__form" id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                         <h2 className="contact__h2" >Contact</h2>

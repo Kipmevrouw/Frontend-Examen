@@ -3,7 +3,7 @@ import React from "react";
 
 const Favo = (props) => {
     return(
-        <section className="favo__alles">
+        <section className="favo__alles" id="features">
             <div className="favo__width">
                 <figure class="favo__figure">
                     <h1>Poliwrath</h1>

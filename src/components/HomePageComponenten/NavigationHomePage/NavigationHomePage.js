@@ -3,6 +3,7 @@ import "../HamburgerMenuHomePage/HamburgerMenuHomePage.css";
 import Hamburger from "../HamburgerMenuHomePage/HamburgerMenuHomePage";
 import { useState } from "react";
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 
 export default function NavigationHomePage(props){
@@ -21,11 +22,11 @@ export default function NavigationHomePage(props){
                 <img className="nav__img" src={"/img/" + props.image} alt="Pokemon logo"/>
               </figure>
               <section className="navigation__links">
-                    <a href="/"className="navbarKopjeLink">{props.nav1 || ""}</a>
-                    <a href="/Ons" className="navbarKopjeLink">{props.nav2 || ""}</a>
-                    <a href="/Features" className="navbarKopjeLink">{props.nav3 || ""}</a>
-                    <a href="/Abbonementen" className="navbarKopjeLink">{props.nav4 || ""}</a>
-                    <a href="/Contact" className="navbarKopjeLink">{props.nav5 || ""}</a>
+                    <Link to='#header' className="navbarKopjeLink">{props.nav1 || ""}</Link>
+                    <Link to='#ons' className="navbarKopjeLink">{props.nav2 || ""}</Link>
+                    <Link to='#features' className="navbarKopjeLink">{props.nav3 || ""}</Link>
+                    <Link to='#abbo' className="navbarKopjeLink">{props.nav4 || ""}</Link>
+                    <Link to='#contact' className="navbarKopjeLink">{props.nav5 || ""}</Link>
               </section>            
               <a href="/Login" class="header__button">{props.buttonText || "Default"}</a>
           </section>

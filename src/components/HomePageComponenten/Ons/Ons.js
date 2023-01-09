@@ -3,7 +3,7 @@ import React from "react";
 
 const Ons = (props) => {
     return(
-        <section class="overons">
+        <section class="overons" id="ons">
                 <div class="overons__wrapper">
                     <h2 class="ons__h2">{props.headerTitle}</h2>
                     <p class="ons__p">{props.stukjeTekst}</p>
