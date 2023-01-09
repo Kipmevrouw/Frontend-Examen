@@ -1,4 +1,4 @@
-.favo__alles{
+.features__alles{
 padding: 5rem;
 justify-content: flex-start;
 display: flex;
@@ -8,11 +8,11 @@ align-items: center;
 flex-wrap: wrap;
 }
 
-.favo__width{
+.features__width{
     width: 20%;
 }
 
-.favo__figure{
+.features__figure{
     background-color: #ffe88b;
     min-height: 28rem;
     padding: 1rem;
@@ -22,17 +22,17 @@ flex-wrap: wrap;
     text-align: center;
 }
 
-.favo__figure h1{
+.features__figure h1{
     letter-spacing: 0.5rem;
     font-family: 'Pokemon Solid', sans-serif;
 }
 
-.favo__figure_pre h1{
+.features__figure_pre h1{
     letter-spacing: 0.5rem;
     font-family: 'Pokemon Solid', sans-serif;
 }
 
-.favo__figure_pre{
+.features__figure_pre{
     background-color: #ffcc03;
     padding: 1rem;
     min-width: 20rem;
@@ -48,7 +48,7 @@ flex-wrap: wrap;
 }
 
 @media screen and (max-width: 900px) {
-    .favo__alles{
+    .features__alles{
         flex-direction: column-reverse;
     }
 

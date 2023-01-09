@@ -23,7 +23,7 @@ export default function NavigationHomePage(props){
               </figure>
               <section className="navigation__links">
                     <Link to='#header' className="navbarKopjeLink">{props.nav1 || ""}</Link>
-                    <Link to='#ons' className="navbarKopjeLink">{props.nav2 || ""}</Link>
+                    <Link to='#overons' className="navbarKopjeLink">{props.nav2 || ""}</Link>
                     <Link to='#features' className="navbarKopjeLink">{props.nav3 || ""}</Link>
                     <Link to='#abbo' className="navbarKopjeLink">{props.nav4 || ""}</Link>
                     <Link to='#contact' className="navbarKopjeLink">{props.nav5 || ""}</Link>

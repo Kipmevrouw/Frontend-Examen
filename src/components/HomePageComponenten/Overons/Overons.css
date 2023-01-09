@@ -21,14 +21,14 @@
 }
 
 
-.ons__h2{
+.overons__h2{
     color: black;
     font-size: 5rem;
     font-family: 'Pokemon Solid', sans-serif;
     letter-spacing: 0.5rem;
 }
 
-.ons__p{
+.overons__p{
     padding-top: 2rem;
     color: gray;
     font-size: 2rem;
@@ -41,7 +41,7 @@
         justify-content: center;
         gap: 5rem;
     }
-    .ons__h2{
+    .overons__h2{
         text-align: center;
         font-size: 3rem;
     

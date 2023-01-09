@@ -2,11 +2,11 @@ import NavigationHomePage from "../components/HomePageComponenten/NavigationHome
 import Header from "../components/HomePageComponenten/Header/Header";
 import Card from "../components/HomePageComponenten/Card/Card";
 import Card2 from "../components/HomePageComponenten/Card/Card2";
-import Ons from "../components/HomePageComponenten/Ons/Ons";
+import Overons from "../components/HomePageComponenten/Overons/Overons";
 import Contact from "../components/HomePageComponenten/Contact/Contact";
 import Abbonement from "../components/HomePageComponenten/Abbonement/Abbonement";
 import Footer from "../components/HomePageComponenten/Footer/Footer";
-import Favo from "../components/HomePageComponenten/Favo/Favo";
+import Features from "../components/HomePageComponenten/Features/Features";
 import Art from "../components/HomePageComponenten/Art/Art";
 import React from "react";
 const HomePage = () => {
@@ -25,7 +25,7 @@ const HomePage = () => {
                 smallTitle="Klik hier om in te loggen:"
                 buttonText="Login" />
 
-            <Ons 
+            <Overons 
             headerTitle="Over ons:"
                 stukjeTekst="Pokemon-Spekky is begonnen met pokemonkaarten verkopen in 
                                   1997. Ik vond het vroeger als kind geweldig om mee te ruilen
@@ -35,8 +35,8 @@ const HomePage = () => {
                                   "
                 imageM="Cards.jpg"  >
 
-            </Ons>
-            <Favo 
+            </Overons>
+            <Features 
                 imageBulbasaur="bulbasaur.png"
                 imagePoliwrath="polli.png"
                 imageGengar="gengar.png"
@@ -44,7 +44,7 @@ const HomePage = () => {
                 imageDitto="ditto.png"
             
             >
-            </Favo>
+            </Features>
             <Art imageA="Favo.png">
 
             </Art>
