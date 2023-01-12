@@ -39,9 +39,9 @@ export default function NavigationCollectiePage(props){
               </figure>
               <section className="navigation__links">
                     <a href="/"className="navbarKopjeLink">{props.nav1 || ""}</a>
-                    <a href="/Ons" className="navbarKopjeLink">{props.nav2 || ""}</a>
-                    <a href="/Features" className="navbarKopjeLink">{props.nav3 || ""}</a>
-                    <a href="/Abbonementen" className="navbarKopjeLink">{props.nav4 || ""}</a>
+                    <a href="/BacklogChooserPage" className="navbarKopjeLink">{props.nav2 || ""}</a>
+                    <a href="/" className="navbarKopjeLink">{props.nav3 || ""}</a>
+                    <a href="/" className="navbarKopjeLink">{props.nav4 || ""}</a>
               </section>            
               <button class="header__button" onClick={handleShareButton} className="header__button" type="button" title="Share this article">{props.buttonText || "Default"}</button> 
           </section>

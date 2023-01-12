@@ -1,6 +1,5 @@
 import "./LoginForm.css";
 import React from "react";
-import Collectiepage from "../../pages/Collectiepage";
 import {useState} from 'react';
 
 const LoginForm = (props) => {
@@ -46,7 +45,7 @@ const LoginForm = (props) => {
       );
 
     const renderForm = (
-      <section className="form__">
+      <section>
         <div>
           <img className="form__img" src={"/img/" + props.imageForm} alt="Pokemon logo"/>
         </div>

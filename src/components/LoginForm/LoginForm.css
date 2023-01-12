@@ -15,6 +15,10 @@
     padding: 5rem;
   }
 
+  .login-form {
+    border-radius: 2rem;
+  }
+
   .form__wrapper{
     padding: 3rem;
     display: flex;

@@ -1,12 +1,11 @@
 import "./NavigationHomePage.css";
-import "../HamburgerMenuHomePage/HamburgerMenuHomePage.css";
 import Hamburger from "../HamburgerMenuHomePage/HamburgerMenuHomePage";
 import { useState } from "react";
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
 
-export default function NavigationHomePage(props){
+export default function NavigationHomepage(props){
 
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
