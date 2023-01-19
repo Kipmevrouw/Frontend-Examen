@@ -2,7 +2,6 @@ import "./NavbarFilter.css";
 
 const NavbarFilter = () => {
 return (
-        <section className="dashboard__wrapper">
             <nav className="dashboard__nav">
                 <ul className="dashboard__ul">
                     <li  className="dashboard__li">
@@ -12,7 +11,6 @@ return (
                     </li>
                 </ul>
             </nav>
-        </section>
     );
 }
 

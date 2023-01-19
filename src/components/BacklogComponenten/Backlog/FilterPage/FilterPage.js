@@ -4,8 +4,10 @@ import Display from "../../Display/Display"
 const FilterPage = () => {
     return (
         <>
-            <Form></Form>
-            <Display/>
+            <article className="FilterPage">
+                <Form></Form>
+                <Display/>
+            </article>
         </>
     )
 }

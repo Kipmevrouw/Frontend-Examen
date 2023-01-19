@@ -2,10 +2,10 @@ import "./Form.css";
 import { useState } from "react";
 // Deze import haalt useDispatch op
 import { useDispatch } from "react-redux";
-import { filterGamesByNaam, filterGamesBySoort} from "../../../helpers/filterGames";
+import { filterPokemonsByNaam, filterPokemonsBySoort} from "../../../helpers/filterPokemons";
 
 // Deze import geeft de benodigde data door aan de bijbehorende functie
-import {games} from "../../../data/games";
+import {pokemons} from "../../../data/pokemons";
 
 const Form = () => {
     // Dit is een state met arrays van objecten
@@ -14,13 +14,13 @@ const Form = () => {
             id: "naam",
             value: "",
             label: "Pokemon",
-            filter: filterGamesByNaam
+            filter: filterPokemonsByNaam
         },
         {
             id: "soort",
             value: "",
             label: "Soort",
-            filter: filterGamesBySoort
+            filter: filterPokemonsBySoort
         },
     ]);
 
@@ -39,7 +39,7 @@ const Form = () => {
                 input.value = event.target.value;
             }
         });
-        // Hier word opnieuw een copy gemaakt en terug gezet in de state "input"
+        // Hier word opnieuw een copy gemaakt en terug gezet in de state "input" 
         setInputs(copy);
     }
 
@@ -59,15 +59,15 @@ const Form = () => {
     const submit = (event) => {
         // Dit zorgt ervoor dat de pagina niet refreshed
         event.preventDefault();
-        // Hier worden alle games data opgehaald en word er een functie van gemaakt
-        let result = games;
+        // Hier worden alle pokemons data opgehaald en word er een functie van gemaakt
+        let result = pokemons;
         // Hier word alle input aangepast
         inputs.forEach( input => {
             result = input.filter(input.value, result);
         });
-        // Hier word verteld aan de disPatch dat het type "filteredgames" een payload result heeft
+        // Hier word verteld aan de disPatch dat het type "filteredpokemons" een payload result heeft
         dispatch({
-            type: "FILTEREDGAMES",
+            type: "FILTEREDPOKEMONS",
             payload: result
         })
     }

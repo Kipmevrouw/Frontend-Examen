@@ -1,19 +1,15 @@
 .display{
     width:40rem;
-    background:linear-gradient(to bottom, hsl(0, 0%, 93%),  hsl(0, 0%, 88%));
+    background: url("/public/img/filterachtergrondfotos.png");
     aspect-ratio: 1/1;
     padding:4rem;
     display:flex; 
-    justify-content:center;
-    align-items: center;
-    border-radius: 0.3rem;
-    box-shadow: 
-    0 1rem 2rem 0 rgba(0,0,0,0.3),
-    inset 0 -0.5rem 0.5rem -0.3rem #004e92;
-    position:relative;
+    border-radius: 4rem;
     animation-name:popup;
     animation-duration: 0.8s;
-    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95)
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    justify-content: center;
+    align-items: center;
 }
 
 .display__play{
@@ -22,7 +18,7 @@
     aspect-ratio: 1/1;
     top:0;
     right:0;
-    background: linear-gradient(to bottom right, #004e92, #000428);
+    background: url("/public/img/filter achtergrond.jpg");
     border-radius:50%;
     display:flex;
     justify-content: center;
@@ -31,12 +27,15 @@
     font-size:110%;
     z-index: 1;
     transform: translate(50%,-50%) rotate(10deg);
+
 }
+
+
 
 @keyframes popup{
     from{
         opacity:0;
-        transform: translateY(20px);
+        transform: translatez(20px);
     }
     to{
         opacity:1;

@@ -1,5 +1,5 @@
 import React from "react";
-import LeftPane from "../NavbarFilter/NavbarFilter";
+import NavbarFilter from "../NavbarFilter/NavbarFilter";
 import RightPane from "../RightPane/RightPane";
 import Popup from "../Popup/Popup";
 import chooseImage from "../../../../helpers/chooseImage";
@@ -58,15 +58,6 @@ class Dashboard extends React.Component {
     }
 
     onCardClicked = (idFromCard) => {
-        console.log(idFromCard);
-        if (this.state.productCards[idFromCard - 1].name === "Placeholder") {
-            this.setState({
-                editMode: false,
-                open: !this.state.open,
-                cardClicked: this.state.productCards[idFromCard - 1],
-            });
-            return;
-        }
         this.setState({
             editMode: true,
             open: !this.state.open,
@@ -80,11 +71,14 @@ class Dashboard extends React.Component {
             return (
                 <article className="dashboard">
                     <section>
-                        <LeftPane navigationListItems={navigationItemsObject.navigationItems}></LeftPane>
+                        <NavbarFilter navigationListItems={navigationItemsObject.navigationItems}></NavbarFilter>
                     </section>
                     <section>
 
                         <RightPane onProductCardClicked={this.onCardClicked} onButtonClicked={this.onButtonClicked} productCards={this.state.productCards} headerText="Mijn Producten" buttonSymbol="+" buttonText="Voeg een product toe"></RightPane>
+                    </section>
+                    <section>
+
                     </section>           
                 </article>
             );

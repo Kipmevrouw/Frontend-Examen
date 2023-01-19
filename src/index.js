@@ -2,11 +2,11 @@ import React from 'react';
 import { createStore } from 'redux';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import filteredGamesReducer from './reducers/filteredGamesReducer';
+import filteredPokemonsReducer from './reducers/filteredPokemonsReducer';
 import App from './App';
 import { BrowserRouter } from "react-router-dom";
 
-const store = createStore(filteredGamesReducer);
+const store = createStore(filteredPokemonsReducer);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

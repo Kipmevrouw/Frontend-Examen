@@ -1,8 +1,7 @@
-.dashboard__wrapper{
+.dashboard__nav{
     padding:4rem;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 
@@ -10,11 +9,7 @@
     font-size: 2rem;
     list-style: none;
     display:flex;
-    justify-content: center;
-}
-
-.dashboard__li{
-    
+    justify-content: flex-start;
 }
 
 .dashboard__link{
@@ -37,4 +32,5 @@
 .dashboard__li, a{
     color: white;
     text-decoration: none;
+
 }

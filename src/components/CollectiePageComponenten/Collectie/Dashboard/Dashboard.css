@@ -4,5 +4,6 @@
     background: #fff7f7;
     display:grid;
     border-radius:1rem;
+    grid-template-rows:10% 90%;
 }
 

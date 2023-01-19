@@ -1,4 +1,4 @@
-export const games = [
+export const pokemons = [
     {
         naam: "Bulbasaur",
         soort: ["Grass", "Poison"],
