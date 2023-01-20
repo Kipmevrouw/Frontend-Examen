@@ -46,9 +46,16 @@ export default function NavigationHomepage(props){
                   display: ${hamburgerOpen ? 'inline' : 'none'};
                   height: 100vh;
                   width: 20rem;
-                  margin-top: 80px;
-                  position: absolute;
+                  margin-top: 100px;
                   width: 100%;
+                  min-height: 100vh;
+                }
+                .navigation__links{
+                  align-items: center;
+                  text-align: center;
+                  justify-content: center;
+                  display: flex;
+                  flex-direction: column-reverse;
                 }
               }
 
