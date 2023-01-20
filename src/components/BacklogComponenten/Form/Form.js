@@ -51,7 +51,7 @@ const Form = () => {
         return (
         <div key={objectFromStateArray.id} className="form__wrapper">
             <label className="form__label" htmlFor={objectFromStateArray.id}>{objectFromStateArray.label}</label>
-            <input className="form__input" onChange={onInputChanged} id={objectFromStateArray.id} type="text" value={objectFromStateArray.value} />
+            <input className="form__input" onChange={onInputChanged} id={objectFromStateArray.id} type="text" value={objectFromStateArray.value}/>
         </div>);
     })
 

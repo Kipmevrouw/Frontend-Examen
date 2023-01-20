@@ -26,6 +26,7 @@ export const pokemons = [
     {
         naam: "Squirtle",
         soort: ["Water"],
+
     },
     {
         naam: "Wartortle",

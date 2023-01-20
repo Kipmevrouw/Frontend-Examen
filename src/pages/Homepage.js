@@ -36,6 +36,9 @@ const HomePage = () => {
                 imageM="Cards.jpg"  >
 
             </Overons>
+            <Art imageA="Favo.png">
+
+            </Art>
             <Features 
                 imageBulbasaur="bulbasaur.png"
                 imagePoliwrath="polli.png"
@@ -45,9 +48,6 @@ const HomePage = () => {
             
             >
             </Features>
-            <Art imageA="Favo.png">
-
-            </Art>
             <Abbonement hoofdTitel="Abbonementen">
                 <Card image="evolving.png"
                     prijs="Per maand = €12,99"
