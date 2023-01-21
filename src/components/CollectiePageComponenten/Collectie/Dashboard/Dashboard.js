@@ -78,7 +78,7 @@ class Dashboard extends React.Component {
                         <RightPane onProductCardClicked={this.onCardClicked} onButtonClicked={this.onButtonClicked} productCards={this.state.productCards} headerText="Mijn Producten" buttonSymbol="+" buttonText="Voeg een product toe"></RightPane>
                     </section>
                     <section>
-
+                    
                     </section>           
                 </article>
             );

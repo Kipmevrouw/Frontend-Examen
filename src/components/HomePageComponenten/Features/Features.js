@@ -29,9 +29,9 @@ const Features = (props) => {
             </div>
             <div className="features__width">
                 <figure class="features__figure">
-                    <h1>Ditto</h1>
-                    <img src={"/img/" + props.imageDitto} />
-                    <p>Flexibel weten welk pokemon het beste bij je past.</p>
+                    <h1>Lapras</h1>
+                    <img src={"/img/" + props.imageLapras} />
+                    <p>Nooit problemen met pokemons die niet willen luisteren.</p>
                 </figure>
             </div>
         </section>
