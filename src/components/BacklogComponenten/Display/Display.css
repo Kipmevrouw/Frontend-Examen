@@ -1,0 +1,46 @@
+.display{
+    width:40rem;
+    background: url("/public/img/filterachtergrondfotos.png");
+    aspect-ratio: 1/1;
+    padding:4rem;
+    display:flex; 
+    border-radius: 4rem;
+    animation-name:popup;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0rem 0rem 0.9rem 0.1rem rgb(255, 236, 236);
+}
+
+.display__play{
+    position:absolute;
+    height:10rem;
+    aspect-ratio: 1/1;
+    top:0;
+    right:0;
+    background: url("/public/img/filter achtergrond.jpg");
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    font-size:110%;
+    z-index: 1;
+    transform: translate(50%,-50%) rotate(10deg);
+
+}
+
+
+
+@keyframes popup{
+    from{
+        opacity:0;
+        transform: translatez(20px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0px);
+
+    }
+}

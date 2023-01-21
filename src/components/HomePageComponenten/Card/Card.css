@@ -6,11 +6,15 @@
     padding: 2rem;
     background-color: rgba(255, 230, 132,0.5);
 }
+.card:hover{
+    box-shadow: 0 1rem 5rem  rgba(3, 3, 3, 0.5);
+    cursor: pointer;
+}
 .card2{
     width: 40rem;
     min-height: 30rem;
     border-radius: 2rem;
-    box-shadow: -0 1rem 5rem 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5rem 8rem  rgba(3, 3, 3, 0.5);
     padding: 2rem;
     background-color: #ffcc03;
     border: blue;

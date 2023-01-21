@@ -1,0 +1,10 @@
+.dashboard{
+    width:100%;
+    min-height:100rem;
+    background: #fff7f7;
+    display:grid;
+    border-radius:1rem;
+    grid-template-rows:10% 90%;
+    grid-template-columns: 60% 40%;
+}
+

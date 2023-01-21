@@ -1,6 +1,5 @@
 import "./LoginForm.css";
 import React from "react";
-import Collectiepage from "../../pages/Collectiepage";
 import {useState} from 'react';
 
 const LoginForm = (props) => {
@@ -46,19 +45,19 @@ const LoginForm = (props) => {
       );
 
     const renderForm = (
-      <section className="form__">
+      <section>
         <div>
           <img className="form__img" src={"/img/" + props.imageForm} alt="Pokemon logo"/>
         </div>
         <div className="form">
           <form onSubmit={handleSubmit}>
             <div className="input-container">
-              <label>Username </label>
+              <label>Gebruikersnaam </label>
               <input type="text" name="uname" required />
               {renderErrorMessage("uname")}
             </div>
             <div className="input-container">
-              <label>Password </label>
+              <label>Wachtwoord </label>
               <input type="password" name="pass" required />
               {renderErrorMessage("pass")}
             </div>
@@ -74,7 +73,7 @@ const LoginForm = (props) => {
 
         <div className="app">
         <div className="login-form">
-          {isSubmitted ? <div><a href="/Collectiepage" className="">Klik hier</a> om naar je collectiepagina te gaan.</div> : renderForm}
+          {isSubmitted ? <div><a href="/Collectiepage" className="Collectie__klikhier">Klik hier</a> om naar je collectiepagina te gaan.</div> : renderForm}
         </div>
       </div>
     );
