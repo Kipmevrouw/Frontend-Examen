@@ -1,0 +1,56 @@
+.footer__header{
+    padding: 5rem;
+    display: flex;
+    background-color: #F0EBE3;
+    justify-content: space-around;
+}
+
+.footer__div{
+    margin-bottom: 10rem;
+    margin-right: 1rem;
+    
+}
+
+.footer__div h1{
+    font-size: 2rem;
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: 0.5rem;
+}
+
+.footer__main{
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    color: #eee;
+    padding: 5rem;
+    justify-content: space-around;
+}
+
+.footer__icons{
+    font-size: 3rem;
+}
+
+.footer__apart__icon{
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .footer__header{
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+    .div1{
+        display: none;
+    }
+    .footer__div{
+        margin-bottom: 3rem;
+        
+    }
+    .footer__main{
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+}

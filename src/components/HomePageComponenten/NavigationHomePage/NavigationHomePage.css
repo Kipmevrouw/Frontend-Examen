@@ -1,0 +1,64 @@
+.navigation__web{
+    width: 100%;
+    background: white;
+    display: flex;
+    color: gray;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    box-shadow: -0 1rem 4rem 0 rgb(0, 0, 0, 0.2);
+    height: 100px;
+}
+
+.nav__img{
+    height: 5rem;
+}
+
+.navigation__links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navigation__links a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbarKopjeLink{
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 3rem;
+}
+
+.navbarKopjeLink:hover{
+    border-bottom: 5px solid #2a75bb;
+}
+
+.header__button{
+    font-size: 2.0rem;
+    background: rgb(0, 81, 255);
+    border: none;
+    padding: 1rem 4rem;
+    border-radius: 3rem;
+    transition: 0s;
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    text-decoration: none;
+}
+
+.header__button:hover{
+    background: rgb(0, 50, 158);
+    cursor: pointer;
+}
+@media screen and (max-width:1000px){
+    .navigation__mobiel{
+        display: flex;
+        gap: 8rem;
+        height: 100px;
+        align-items: center;
+        text-align: center;
+        justify-content: left;
+        justify-content: space-between;
+    }
+}

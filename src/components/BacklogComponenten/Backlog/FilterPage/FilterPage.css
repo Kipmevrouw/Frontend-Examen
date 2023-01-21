@@ -1,0 +1,11 @@
+.FilterPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap:4rem;
+    flex-wrap: wrap;
+    padding:4rem;
+    background:linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 190, 70, 0.9)), url("/public/img/filter achtergrond.jpg");
+
+}

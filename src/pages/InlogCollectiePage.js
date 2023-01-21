@@ -1,11 +1,11 @@
-import Footer from "../components/Footer/Footer";
+import Footer from "../components/HomePageComponenten/Footer/Footer";
 import LoginForm from "../components/LoginForm/LoginForm";
-import Navigation from "../components/Navigation/Navigation";
+import NavigationHomePage from "../components/HomePageComponenten/NavigationHomePage/NavigationHomePage";
 
 const InlogCollectiePage = () => {
     return (
         <>
-            <Navigation
+            <NavigationHomePage
                 nav1="Home"
                 nav2="Over"
                 nav3="Features"
