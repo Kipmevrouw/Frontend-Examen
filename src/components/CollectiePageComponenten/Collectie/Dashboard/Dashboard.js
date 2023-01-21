@@ -1,6 +1,6 @@
 import React from "react";
 import NavbarFilter from "../NavbarFilter/NavbarFilter";
-import RightPane from "../RightPane/RightPane";
+import MijnPokemon from "../MijnPokemon/MijnPokemon";
 import Popup from "../Popup/Popup";
 import chooseImage from "../../../../helpers/chooseImage";
 import productsObject from "../../../../data/products";
@@ -26,23 +26,6 @@ class Dashboard extends React.Component {
         this.setState({ open: !this.state.open })
     }
 
-    addButtonClicked = (inputFromPopup) => {
-        let imageFromHelper = chooseImage(inputFromPopup);
-        let toBeAdded = [
-            {
-                id: this.state.productCards.length + 1,
-                name: inputFromPopup,
-                img: imageFromHelper,
-            }
-        ]
-
-        let mergedArrays = this.state.productCards.concat(toBeAdded);
-        this.setState({
-            productCards: mergedArrays,
-            open: !this.state.open,
-        })
-    }
-
     editButtonClicked = (inputFromPopup) => {
         let productCards = this.state.productCards;
         let newState = productCards.map(product => {
@@ -66,27 +49,19 @@ class Dashboard extends React.Component {
     }
 
     render() {
-        console.table(this.state.cardClicked);
-        if (this.state.open === true) {
-            return (
-                <article className="dashboard">
-                    <section>
-                        <NavbarFilter navigationListItems={navigationItemsObject.navigationItems}></NavbarFilter>
-                    </section>
-                    <section>
-
-                        <RightPane onProductCardClicked={this.onCardClicked} onButtonClicked={this.onButtonClicked} productCards={this.state.productCards} headerText="Mijn Producten" buttonSymbol="+" buttonText="Voeg een product toe"></RightPane>
-                    </section>
-                    <section>
-                    
-                    </section>           
-                </article>
-            );
-        }
         return (
-            <Popup editButtonClicked={this.editButtonClicked} editMode={this.state.editMode} cardClicked={this.state.cardClicked} addButtonClicked={this.addButtonClicked} />
-        )
+                    <article className="dashboard">
+                        <section>
+                            <NavbarFilter navigationListItems={navigationItemsObject.navigationItems}></NavbarFilter>
+                            <MijnPokemon onProductCardClicked={this.onCardClicked} onButtonClicked={this.onButtonClicked} productCards={this.state.productCards} headerText="Mijn Producten"></MijnPokemon>
+                        </section>
+                        <section>
+                            <Popup editButtonClicked={this.editButtonClicked} editMode={this.state.editMode} cardClicked={this.state.cardClicked} addButtonClicked={this.addButtonClicked} />
+                        </section>   
+                    </article>
+                );
+            }
     }
-}
+
 
 export default Dashboard;

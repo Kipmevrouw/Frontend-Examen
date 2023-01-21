@@ -1,0 +1,22 @@
+.productsWrapper{
+    padding: 4rem;
+}
+
+.headerCollectie{
+    display:flex;
+    align-items: center;
+    padding-bottom:4rem;
+}
+
+.headerCollectie__h1{
+    font-size: 300%;
+    letter-spacing: 0.5rem;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+.productsList{
+    list-style: none;
+    display:flex;
+    gap:4rem;
+    flex-wrap:wrap;
+}

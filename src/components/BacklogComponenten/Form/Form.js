@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { filterPokemonsByNaam, filterPokemonsBySoort} from "../../../helpers/filterPokemons";
 
 // Deze import geeft de benodigde data door aan de bijbehorende functie
-import {pokemons} from "../../../data/pokemons";
+import {pokemons, pokemonTypes} from "../../../data/pokemons";
 
 const Form = () => {
     // Dit is een state met arrays van objecten
@@ -14,12 +14,14 @@ const Form = () => {
             id: "naam",
             value: "",
             label: "Pokemon",
+            options: pokemons.map((pokemon) => pokemon.naam),
             filter: filterPokemonsByNaam
         },
         {
             id: "soort",
             value: "",
             label: "Soort",
+            options: pokemonTypes,
             filter: filterPokemonsBySoort
         },
     ]);
@@ -39,20 +41,36 @@ const Form = () => {
                 input.value = event.target.value;
             }
         });
-        // Hier word opnieuw een copy gemaakt en terug gezet in de state "input" 
+        // Hier word opnieuw een copy gemaakt en terug gezet in de state "input"
         setInputs(copy);
     }
 
     // Hier word een functie gemaakt die over alle inputs heen gaat
     // De array noemt niet meer 'inputs', maar 'objectFromStateArray'
     const inputsToBeRendered = inputs.map(objectFromStateArray => {
-        
+        if (objectFromStateArray.hasOwnProperty("options")) {
+            // is multiple choice
+            let options = objectFromStateArray.options;
+
+            return (
+                <div key={objectFromStateArray.id} className={"form__wrapper"}>
+                    <label htmlFor={objectFromStateArray.id}>{objectFromStateArray.label}</label>
+                    <select id={objectFromStateArray.id} onChange={onInputChanged}>
+                        {options.map(option => {
+                            return (<option key={option} value={option}>{option}</option>)
+                        })}
+                    </select>
+                </div>
+            );
+        }
+
+
         // Hier word in ieder iets gereturned
         return (
-        <div key={objectFromStateArray.id} className="form__wrapper">
-            <label className="form__label" htmlFor={objectFromStateArray.id}>{objectFromStateArray.label}</label>
-            <input className="form__input" onChange={onInputChanged} id={objectFromStateArray.id} type="text" value={objectFromStateArray.value}/>
-        </div>);
+            <div key={objectFromStateArray.id} className="form__wrapper">
+                <label className="form__label" htmlFor={objectFromStateArray.id}>{objectFromStateArray.label}</label>
+                <input className="form__input" onChange={onInputChanged} id={objectFromStateArray.id} type="text" value={objectFromStateArray.value}/>
+            </div>);
     })
 
     //Dit past de state aan wanneer er een verandering is geplaatst in de input
@@ -75,8 +93,8 @@ const Form = () => {
     return (
         <form className="formFilter" onSubmit={submit}>
             <div className="form__inputsWrapper">
-            {inputsToBeRendered}
-            </div>         
+                {inputsToBeRendered}
+            </div>
             <button className="form__search" onClick={submit}>Zoeken</button>
         </form>
     )

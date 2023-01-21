@@ -45,3 +45,23 @@ export const pokemons = [
         soort: ["Electric"],
     },
 ];
+
+export const pokemonTypes = [
+    "Grass",
+    "Poison",
+    "Fire",
+    "Flying",
+    "Water",
+    "Bug",
+    "Normal",
+    "Electric",
+    "Ground",
+    "Fairy",
+    "Fighting",
+    "Psychic",
+    "Rock",
+    "Steel",
+    "Ice",
+    "Ghost",
+    "Dragon",
+];

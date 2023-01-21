@@ -1,13 +1,13 @@
 import ProductCard from "../ProductCard/ProductCard";
-import "./RightPane.css";
+import "./MijnPokemon.css";
 
-const RightPane = ({headerText, buttonSymbol, buttonText, productCards, onButtonClicked, onProductCardClicked}) => {
+const MijnPokemon = ({headerText, buttonSymbol, buttonText, productCards, onButtonClicked, onProductCardClicked}) => {
     let onCardClicked = (idFromCard) =>{
         onProductCardClicked(idFromCard);
     }
     
     let productCardsToBeRendered = productCards.map(product => {
-        return <ProductCard onCardClicked={onCardClicked} key={product.id} id={product.id} name={product.name} productImg={product.img} />
+        return <ProductCard onCardClicked={onCardClicked} key={product.id} id={product.id} name={product.name} productImg={product.img} productTag={product.tag}/>
       
     });
     return (
@@ -23,4 +23,4 @@ const RightPane = ({headerText, buttonSymbol, buttonText, productCards, onButton
     );
 }
 
-export default RightPane;
+export default MijnPokemon;
