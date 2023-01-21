@@ -1,8 +1,9 @@
 import "./NavigationHomePage.css";
 import Hamburger from "../HamburgerMenuHomePage/HamburgerMenuHomePage";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
+
 
 
 export default function NavigationHomepage(props){
@@ -12,6 +13,16 @@ export default function NavigationHomepage(props){
     const toggleHamburger = () =>{
       setHamburgerOpen(!hamburgerOpen)
     }
+
+    useEffect(() => {
+      const onScroll =  () => {
+        setHamburgerOpen(false)
+      };
+      window.removeEventListener('scroll', onScroll);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
     return (
       <>
 
@@ -21,11 +32,11 @@ export default function NavigationHomepage(props){
                 <img className="nav__img" src={"/img/" + props.image} alt="Pokemon logo"/>
               </figure>
               <section className="navigation__links">
-                    <Link to='#header' className="navbarKopjeLink">{props.nav1 || ""}</Link>
-                    <Link to='#overons' className="navbarKopjeLink">{props.nav2 || ""}</Link>
-                    <Link to='#features' className="navbarKopjeLink">{props.nav3 || ""}</Link>
-                    <Link to='#abbo' className="navbarKopjeLink">{props.nav4 || ""}</Link>
-                    <Link to='#contact' className="navbarKopjeLink">{props.nav5 || ""}</Link>
+                    <Link onClick={toggleHamburger} to='#header' className="navbarKopjeLink">{props.nav1 || ""}</Link>
+                    <Link onClick={toggleHamburger} to='#overons' className="navbarKopjeLink">{props.nav2 || ""}</Link>
+                    <Link onClick={toggleHamburger} to='#features' className="navbarKopjeLink">{props.nav3 || ""}</Link>
+                    <Link onClick={toggleHamburger} to='#abbo' className="navbarKopjeLink">{props.nav4 || ""}</Link>
+                    <Link onClick={toggleHamburger} to='#contact' className="navbarKopjeLink">{props.nav5 || ""}</Link>
               </section>            
               <a href="/Login" class="header__button">{props.buttonText || "Default"}</a>
           </section>
