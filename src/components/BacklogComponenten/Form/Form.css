@@ -51,9 +51,8 @@
 
 }
 .form__input{
-    border:none;
-
-    outline: none;
-    border-bottom: 0.2rem solid black;
-    font-size: 100%;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    border: none;
 }
