@@ -54,8 +54,8 @@ const Form = () => {
 
             return (
                 <div key={objectFromStateArray.id} className={"form__wrapper"}>
-                    <label htmlFor={objectFromStateArray.id}>{objectFromStateArray.label}</label>
-                    <select id={objectFromStateArray.id} onChange={onInputChanged}>
+                    <label htmlFor={objectFromStateArray.id} className="form__label">{objectFromStateArray.label}</label>
+                    <select id={objectFromStateArray.id} onChange={onInputChanged} className="form__select">
                         {options.map(option => {
                             return (<option key={option} value={option}>{option}</option>)
                         })}

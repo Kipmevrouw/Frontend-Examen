@@ -4,8 +4,9 @@
     display:flex;
     flex-direction: column;
     border-radius: 0.3rem;
-    background-color: #eee;
+    background-color: #ffcc03;
     border-radius: 4rem;
+    box-shadow: 0rem 0rem 0.9rem 0.1rem rgb(255, 236, 236);
 }
 
 .form__inputsWrapper{
@@ -14,11 +15,19 @@
     gap:1rem;
 }
 .form__wrapper{
+    padding: 1rem;
     display:flex;
     flex-direction: column;
     gap:0.5rem;
 }
 
+.form__select{
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    border: none;
+
+}
 .form__search{
     font-size: 2.0rem;
     background: #0051ff;
@@ -29,6 +38,7 @@
     color: white;
     font-family: 'Share Tech Mono', monospace;
     text-decoration: none;
+    margin: 3rem;
 }
 
 .form__search:hover{
@@ -41,7 +51,6 @@
 
 
 }
-
 .form__input{
     border:none;
     background:none;
