@@ -5,12 +5,16 @@ const Display = () => {
     const filteredPokemons = useSelector(state => { return state });
     // Deze functie gaat over alle gefilterde pokemons heen
     const titlesToBeRendered = filteredPokemons.map(pokemon => {
-        // De eerste gevonden pokemons kom te voor schijn
-        return (
-            <section key={pokemon.naam} className="display">
-                <h2>{pokemon.naam}</h2>
-            </section>
-        )
+        if (pokemon.naam === "appels"){
+            alert("Er is geen pokemon gevonden met deze type.");
+        }else{
+            return (
+                <section key={pokemon.naam} className="display">
+                    <img className="display__img" src={pokemon.foto} alt={pokemon.naam} />
+                    <p>{pokemon.naam}</p>
+                </section>
+            )
+        }
     })
 
     return (

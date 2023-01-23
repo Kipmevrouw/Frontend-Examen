@@ -1,11 +1,12 @@
 .FilterPage{
-    display: flex;
-    align-items: center;
     min-height: 100vh;
     gap:7rem;
     flex-wrap: wrap;
-    padding:4rem;
+    padding:10rem;
     background:linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 190, 70, 0.9)), url("/public/img/filter achtergrond.jpg");
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 50% 50%;
 
 }
 

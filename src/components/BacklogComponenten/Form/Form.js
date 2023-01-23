@@ -2,10 +2,10 @@ import "./Form.css";
 import { useState } from "react";
 // Deze import haalt useDispatch op
 import { useDispatch } from "react-redux";
-import { filterPokemonsByNaam, filterPokemonsBySoort} from "../../../helpers/filterPokemons";
+import { filterPokemonsByNaam, filterPokemonsBySoort} from "../helpers/filterPokemons";
 
 // Deze import geeft de benodigde data door aan de bijbehorende functie
-import {pokemons, pokemonTypes} from "../../../data/pokemons";
+import {pokemons, pokemonTypes} from "../data/pokemons";
 
 const Form = () => {
     // Dit is een state met arrays van objecten

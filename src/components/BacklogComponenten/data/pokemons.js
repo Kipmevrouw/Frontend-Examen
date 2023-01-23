@@ -1,62 +1,74 @@
+import venusaurImage from "../../../img/venusaur.png";
+import charizardImage from "../../../img/charizard.png";
+import blastoiseImage from "../../../img/blastoise.png";
+import ivysaurImage from "../../../img/ivysaur.png";
+import charmanderImage from "../../../img/charmander.png";
+import charmeleonImage from "../../../img/charmeleon.png";
+import squirtleImage from "../../../img/squirtle.png";
+import wartortleImage from "../../../img/wartortle.png";
+import pikachuImage from "../../../img/pikachu.png";
+import raichuImage from "../../../img/raichu.png";
+import bulbasaurImage from "../../../img/bulbasaur.png";
+
 export const pokemons = [
     {
         naam: "Bulbasaur",
         soort: ["Grass", "Poison"],
-        foto: "",
+        foto: bulbasaurImage,
     },
     {
         naam: "Ivysaur",
         soort: ["Grass", "Poison"],
-        foto: "",
+        foto: ivysaurImage,
     },
     {
         naam: "Venusaur",
         soort: ["Grass", "Poison"],
-        foto: "",
+        foto: venusaurImage,
     },
     {
         naam: "Charmander",
         soort: ["Fire"],
-        foto: "",
+        foto: charmanderImage,
     },
     {
         naam: "Charmeleon",
         soort: ["Fire"],
-        foto: "",
+        foto: charmeleonImage,
     },
     {
         naam: "Charizard",
         soort: ["Fire", "Flying"],
-        foto: "",
+        foto: charizardImage,
     },
     {
         naam: "Squirtle",
         soort: ["Water"],
-        foto: "",
+        foto: squirtleImage,
 
     },
     {
         naam: "Wartortle",
         soort: ["Water"],
-        foto: "",
+        foto: wartortleImage,
     },
     {
         naam: "Blastoise",
         soort: ["Water"],
-        foto: "",
+        foto: blastoiseImage,
     },
     {
         naam: "Pikachu",
         soort: ["Electric"],
-        foto: "",
+        foto: pikachuImage,
     },
     {
         naam: "Raichu",
         soort: ["Electric"],
-        foto: "",
+        foto: raichuImage,
     },
     {
-        naam: "Er is geen pokemon gevonden met deze type.",
+        naam: "appels",
         soort: ["Bug", "Normal", "Ground","Fairy","Fighting","Psychic", "Rock", "Steel", "Ice", "Ghost", "Dragon",],
     },
 ];
