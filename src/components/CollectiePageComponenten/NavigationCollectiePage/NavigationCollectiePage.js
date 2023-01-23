@@ -46,7 +46,7 @@ export default function NavigationCollectiePage(props){
                 <img className="nav__img" src={"/img/" + props.image} alt="Pokemon logo"/>
               </figure>
               <section className="navigation__links">
-                    <a onClick={toggleHamburger} href="/"className="navbarKopjeLink">{props.nav1 || ""}</a>
+                    <a onClick={toggleHamburger} href="/Collectiepage"className="navbarKopjeLink">{props.nav1 || ""}</a>
                     <a onClick={toggleHamburger} href="/BacklogChooserPage" className="navbarKopjeLink">{props.nav2 || ""}</a>
                     <a onClick={toggleHamburger} href="/" className="navbarKopjeLink">{props.nav3 || ""}</a>
                     <a onClick={toggleHamburger} href="/" className="navbarKopjeLink">{props.nav4 || ""}</a>

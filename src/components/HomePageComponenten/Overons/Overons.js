@@ -9,7 +9,7 @@ const Overons = (props) => {
                     <p class="overons__p">{props.stukjeTekst}</p>
                 </div>
                 <div class="overons__wrapper">
-                    <img className="overons__img" src={"/img/" + props.imageM} alt="Foto van Becky."/>
+                    <img className="overons__img" src={"/img/" + props.imageM} alt="pokemonkaarten"/>
                 </div>
    
 

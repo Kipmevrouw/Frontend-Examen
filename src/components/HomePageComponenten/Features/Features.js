@@ -7,7 +7,7 @@ const Features = (props) => {
             <div className="features__width">
                 <figure class="features__figure">
                     <h1>Poliwrath</h1>
-                    <img src={"/img/" + props.imagePoliwrath} />
+                                        <img src={"/img/" + props.imagePoliwrath} alt="Poliwrath"/>
                     <p>Genoeg keuze voor iedere pokemon liefhebber.
                     </p>
                 </figure>
@@ -15,7 +15,7 @@ const Features = (props) => {
             <div className="features__width">
                 <figure class="features__figure">
                     <h1>Gengar</h1>
-                    <img src={"/img/" + props.imageGengar} />
+ <img src={"/img/" + props.imageGengar} alt="Gengar"/>
                     <p>Je zult alle pokemons kunnen sparen voor in je pokedex.
                     </p>
                 </figure>
@@ -23,14 +23,14 @@ const Features = (props) => {
             <div className="features__width">
                 <figure class="features__figure">
                     <h1>Bulbasaur</h1>
-                    <img src={"/img/" + props.imageBulbasaur} />
+                        <img src={"/img/" + props.imageBulbasaur} alt="Bulbasaur"/>
                     <p>Berries en poisons voor iedere pokemon in je pokedex.</p>
                 </figure>   
             </div>
             <div className="features__width">
                 <figure class="features__figure">
                     <h1>Lapras</h1>
-                    <img src={"/img/" + props.imageLapras} />
+                     <img src={"/img/" + props.imageLapras} alt="Lapras"/>
                     <p>Nooit problemen met pokemons die niet willen luisteren.</p>
                 </figure>
             </div>

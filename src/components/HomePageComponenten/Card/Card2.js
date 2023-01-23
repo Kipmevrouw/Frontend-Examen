@@ -7,7 +7,7 @@ const Card2 = (props) => {
 
             <article>
                 <figure class="card__figure">
-                    <img src={"/img/" + props.image} />
+                    <img src={"/img/" + props.image} alt="pokemoncard serie" />
                     <p class="card__p">{props.tekst}</p>
                     <li className="card__li">{props.prijs}</li>
                     <li className="card__li">{props.extra}</li>

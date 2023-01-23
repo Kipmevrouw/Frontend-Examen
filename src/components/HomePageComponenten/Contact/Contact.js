@@ -40,7 +40,7 @@ class Contact extends React.Component {
                     <p>We zijn geopend tussen 9:00 tot 18:00</p>
                 </section>
                 <section className='contact__img'>
-                    <img src={"/img/" + this.props.imageF} alt="Foto van Becky."/>
+                    <img src={"/img/" + this.props.imageF} alt="pikachu met een pokebol en een ring"/>
                 </section>
             </section>
         );

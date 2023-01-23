@@ -32,7 +32,7 @@ export default function NavigationHomepage(props){
                 <img className="nav__img" src={"/img/" + props.image} alt="Pokemon logo"/>
               </figure>
               <section className="navigation__links">
-                    <Link onClick={toggleHamburger} to='#header' className="navbarKopjeLink">{props.nav1 || ""}</Link>
+                    <a onClick={toggleHamburger} href="/"className="navbarKopjeLink">{props.nav1 || ""}</a>
                     <Link onClick={toggleHamburger} to='#overons' className="navbarKopjeLink">{props.nav2 || ""}</Link>
                     <Link onClick={toggleHamburger} to='#features' className="navbarKopjeLink">{props.nav3 || ""}</Link>
                     <Link onClick={toggleHamburger} to='#abbo' className="navbarKopjeLink">{props.nav4 || ""}</Link>

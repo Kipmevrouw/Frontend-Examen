@@ -11,7 +11,7 @@ const Display = () => {
             return (
                 <section key={pokemon.naam} className="display">
                     <img className="display__img" src={pokemon.foto} alt={pokemon.naam} />
-                    <p>{pokemon.naam}</p>
+                    <p className="display__p">{pokemon.naam}</p>
                 </section>
             )
         }
