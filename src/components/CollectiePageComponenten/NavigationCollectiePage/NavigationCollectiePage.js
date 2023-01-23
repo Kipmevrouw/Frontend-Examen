@@ -1,7 +1,7 @@
 import "./NavigationCollectiePage.css";
 import "../HamburgerMenuCollectiePage/HamburgerMenuCollectiePage.css";
 import Hamburger from "../HamburgerMenuCollectiePage/HamburgerMenuCollectiePage";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 
 
@@ -29,6 +29,14 @@ export default function NavigationCollectiePage(props){
         console.log("Oeps! Je ondersteund geen Web Share API");
       }
     };
+    useEffect(() => {
+      const onScroll =  () => {
+        setHamburgerOpen(false)
+      };
+      window.removeEventListener('scroll', onScroll);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      return () => window.removeEventListener('scroll', onScroll);
+  }, []); 
     return (
       <>
 
@@ -38,10 +46,10 @@ export default function NavigationCollectiePage(props){
                 <img className="nav__img" src={"/img/" + props.image} alt="Pokemon logo"/>
               </figure>
               <section className="navigation__links">
-                    <a href="/"className="navbarKopjeLink">{props.nav1 || ""}</a>
-                    <a href="/BacklogChooserPage" className="navbarKopjeLink">{props.nav2 || ""}</a>
-                    <a href="/" className="navbarKopjeLink">{props.nav3 || ""}</a>
-                    <a href="/" className="navbarKopjeLink">{props.nav4 || ""}</a>
+                    <a onClick={toggleHamburger} href="/"className="navbarKopjeLink">{props.nav1 || ""}</a>
+                    <a onClick={toggleHamburger} href="/BacklogChooserPage" className="navbarKopjeLink">{props.nav2 || ""}</a>
+                    <a onClick={toggleHamburger} href="/" className="navbarKopjeLink">{props.nav3 || ""}</a>
+                    <a onClick={toggleHamburger} href="/" className="navbarKopjeLink">{props.nav4 || ""}</a>
               </section>            
               <button class="header__button" onClick={handleShareButton} className="header__button" type="button" title="Share this article">{props.buttonText || "Default"}</button> 
           </section>
