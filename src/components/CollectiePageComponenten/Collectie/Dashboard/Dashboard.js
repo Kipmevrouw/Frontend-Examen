@@ -2,9 +2,9 @@ import React from "react";
 import NavbarFilter from "../NavbarFilter/NavbarFilter";
 import MijnPokemon from "../MijnPokemon/MijnPokemon";
 import Popup from "../Popup/Popup";
-import chooseImage from "../../../../helpers/chooseImage";
-import productsObject from "../../../../data/products";
-import navigationItemsObject from "../../../../data/navigationItems";
+import chooseImage from "../../helpers/chooseImage";
+import productsObject from "../../data/products";
+import navigationItemsObject from "../../data/navigationItems";
 import "./Dashboard.css";
 
 class Dashboard extends React.Component {

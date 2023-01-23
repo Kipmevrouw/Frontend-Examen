@@ -1,7 +1,7 @@
-import venusaurImage from "../img/venusaur.png";
-import charizardImage from "../img/charizard.png";
-import blastoiseImage from "../img/blastoise.png";
-import dittoImage from "../img/ditto.png";
+import venusaurImage from "../../../img/venusaur.png";
+import charizardImage from "../../../img/charizard.png";
+import blastoiseImage from "../../../img/blastoise.png";
+import dittoImage from "../../../img/ditto.png";
 
 function chooseImage(inputFromPopup){
     let toBeAddedImage;

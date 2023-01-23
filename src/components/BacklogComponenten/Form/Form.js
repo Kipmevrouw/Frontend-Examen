@@ -14,7 +14,7 @@ const Form = () => {
             id: "naam",
             value: "",
             label: "Pokemon",
-            options: pokemons.map((pokemon) => pokemon.naam),
+            // options: pokemons.map((pokemon) => pokemon.naam),
             filter: filterPokemonsByNaam
         },
         {

@@ -36,10 +36,10 @@
 @keyframes popup{
     from{
         opacity:0;
-        transform: translatez(20px);
+        transform: translatez(40px);
     }
     to{
-        opacity:1;
+        opacity:3;
         transform: translateY(0px);
 
     }

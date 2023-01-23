@@ -1,6 +1,6 @@
-import venusaurImage from "../img/venusaur.png";
-import charizardImage from "../img/charizard.png";
-import blastoiseImage from "../img/blastoise.png";
+import venusaurImage from "../../../img/venusaur.png";
+import charizardImage from "../../../img/charizard.png";
+import blastoiseImage from "../../../img/blastoise.png";
 const products =  [
     {
         id: 1,
