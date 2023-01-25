@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import ProductCard from "../ProductCard/ProductCard";
 import "./MijnPokemon.css";
 
@@ -5,11 +6,14 @@ const MijnPokemon = ({headerText, buttonSymbol, buttonText, productCards, onButt
     let onCardClicked = (idFromCard) =>{
         onProductCardClicked(idFromCard);
     }
-    
+
+
     let productCardsToBeRendered = productCards.map(product => {
         return <ProductCard onCardClicked={onCardClicked} key={product.id} id={product.id} name={product.name} productImg={product.img} productTag={product.tag}/>
-      
+        
     });
+
+
     return (
         <section className="productsWrapper">
             

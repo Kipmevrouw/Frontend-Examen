@@ -1,4 +1,5 @@
 import React from "react";
+import productsObject from "../../data/products";
 import "./Popup.css";
 
 class Popup extends React.Component {
@@ -8,8 +9,9 @@ class Popup extends React.Component {
             input: this.props.cardClicked.name,
             currentCardId: this.props.cardClicked.id
         }
+        
     }
-
+    
     componentWillReceiveProps(nextProps, nextContext) {
         this.setState({
             input: nextProps.cardClicked.name,
@@ -25,7 +27,6 @@ class Popup extends React.Component {
 
     render() {
         return (
-            <section className="popup__center">
                 <article className="popup">
                     <div className="popup__wrapper">
                         <img src={this.props.cardClicked.img} alt="card" className="popup__image"/>
@@ -34,7 +35,6 @@ class Popup extends React.Component {
                                id="name" disabled={!this.props.editable}/>
                     </div>
                 </article>
-            </section>
         );
     }
 }

@@ -1,10 +1,8 @@
 import React from "react";
-import NavbarFilter from "../NavbarFilter/NavbarFilter";
 import MijnPokemon from "../MijnPokemon/MijnPokemon";
 import Popup from "../Popup/Popup";
-import chooseImage from "../../helpers/chooseImage";
 import productsObject from "../../data/products";
-import navigationItemsObject from "../../data/navigationItems";
+import Vrienden from "../Vrienden/Vrienden"
 import "./Dashboard.css";
 
 class Dashboard extends React.Component {
@@ -16,12 +14,23 @@ class Dashboard extends React.Component {
             open: true,
             cardClicked: {},
             editMode: false,
-            allowEdit: false
+            allowEdit: false,
+            
         };
     }
 
     componentDidMount() {
-        this.setState({productCards: productsObject.products});
+        let eersteCardAan = true 
+        let eersteCardId = -1
+        productsObject.products.map(product => {
+            if(eersteCardAan){
+                eersteCardId = product.id
+                eersteCardAan = false
+            }
+        });
+        this.setState({productCards: productsObject.products}, () => {
+            this.onCardClicked(eersteCardId);
+        });
     }
 
     onButtonClicked = () => {
@@ -56,16 +65,18 @@ class Dashboard extends React.Component {
     render() {
         return (
             <article className="dashboard">
-                <section>
-                    <NavbarFilter navigationListItems={navigationItemsObject.navigationItems}></NavbarFilter>
-                    <MijnPokemon onProductCardClicked={this.onCardClicked} onButtonClicked={this.onButtonClicked}
-                                 productCards={this.state.productCards} headerText="Mijn Producten"></MijnPokemon>
-                </section>
-                <section>
-                    <button onClick={this.toggleEditMode} className="dashboard__button">Toggle edit mode</button>
+                <section className="dasboard__grid2">
                     <Popup editable={this.state.allowEdit} editButtonClicked={this.editButtonClicked}
                            editMode={this.state.editMode} cardClicked={this.state.cardClicked}
                            addButtonClicked={this.addButtonClicked}/>
+                    <button onClick={this.toggleEditMode} className="dashboard__button">Toggle edit mode</button>
+                </section>
+                <section className="dasboard__grid1">
+                    <MijnPokemon onProductCardClicked={this.onCardClicked} onButtonClicked={this.onButtonClicked}
+                                 productCards={this.state.productCards} headerText="Mijn Producten"></MijnPokemon>
+                </section>
+                <section className="dasboard__grid3">
+                    <Vrienden imageForm="friend.jpg"/>
                 </section>
             </article>
         );
