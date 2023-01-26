@@ -2,7 +2,7 @@ import React from "react";
 import MijnPokemon from "../MijnPokemon/MijnPokemon";
 import Popup from "../Popup/Popup";
 import productsObject from "../../data/products";
-import Vrienden from "../Vrienden/Vrienden"
+import Vrienden from "../Friends/Vrienden/Vrienden"
 import "./Dashboard.css";
 
 class Dashboard extends React.Component {
@@ -71,13 +71,13 @@ class Dashboard extends React.Component {
                     <Popup editable={this.state.allowEdit} editButtonClicked={this.editButtonClicked}
                            editMode={this.state.editMode} cardClicked={this.state.cardClicked}
                            addButtonClicked={this.addButtonClicked}/>
-                    <button onClick={this.toggleEditMode} className="dashboard__button">Toggle edit mode</button>
+                    <button onClick={this.toggleEditMode} className="dashboard__button">Pas pokemon naam aan</button>
                 </section>
-                <section className="dasboard__grid1">
+                <section className="dasboard__grid3">
                     <MijnPokemon onProductCardClicked={this.onCardClicked} onButtonClicked={this.onButtonClicked}
                                  productCards={this.state.productCards} headerText="Mijn Producten"></MijnPokemon>
                 </section>
-                <section className="dasboard__grid3">
+                <section className="dasboard__grid4">
                     <Vrienden imageForm="friend.jpg"/>
                 </section>
             </article>

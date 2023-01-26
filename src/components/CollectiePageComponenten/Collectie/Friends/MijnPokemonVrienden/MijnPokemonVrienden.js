@@ -13,7 +13,7 @@ let productCardsToBeRendered = productCards.map(product => {
         <section className="productsWrapper">
             
             <header className="headerCollectie">
-                <h1 className="headerCollectie__h1">Daniele's producten</h1>
+                <h1 className="headerCollectie__h1">Daniele's pokemons</h1>
             </header>
             <ul className="productsList">
                 {productCardsToBeRendered}

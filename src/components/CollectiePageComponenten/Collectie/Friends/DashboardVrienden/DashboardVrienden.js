@@ -2,7 +2,7 @@ import React from "react";
 import MijnPokemonVrienden from "../MijnPokemonVrienden/MijnPokemonVrienden";
 import Popup from "../../Popup/Popup";
 import productsVriendenObject from "../../../data/productsVrienden";
-import Vrienden from "../../Vrienden/Vrienden"
+import Vrienden from "../Vrienden/Vrienden"
 import "./DashboardVrienden.css";
 
 class DashboardVrienden extends React.Component {

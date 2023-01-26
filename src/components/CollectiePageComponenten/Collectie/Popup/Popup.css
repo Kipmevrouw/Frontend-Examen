@@ -1,5 +1,5 @@
 .popup{
-    padding: 5rem;
+    padding: 3rem;
 }
 
 .popup__label{
@@ -15,7 +15,15 @@
     background:none;
     border:none;
     color: rgb(0, 0, 0);
-    font-size: 200%;
+    font-size: 150%;
+    outline:none;
+}
+
+.popup__tag2{
+    background:none;
+    border-style:none;
+    color: rgb(0, 0, 0);
+    font-size: 150%;
     outline:none;
 }
 
