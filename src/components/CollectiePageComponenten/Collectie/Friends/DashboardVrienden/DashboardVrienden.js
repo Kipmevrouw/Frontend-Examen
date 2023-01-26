@@ -1,11 +1,11 @@
 import React from "react";
-import MijnPokemon from "../MijnPokemon/MijnPokemon";
-import Popup from "../Popup/Popup";
-import productsObject from "../../data/products";
-import Vrienden from "../Vrienden/Vrienden"
-import "./Dashboard.css";
+import MijnPokemonVrienden from "../MijnPokemonVrienden/MijnPokemonVrienden";
+import Popup from "../../Popup/Popup";
+import productsVriendenObject from "../../../data/productsVrienden";
+import Vrienden from "../../Vrienden/Vrienden"
+import "./DashboardVrienden.css";
 
-class Dashboard extends React.Component {
+class DashboardVrienden extends React.Component {
 
     constructor(props) {
         super(props);
@@ -22,13 +22,13 @@ class Dashboard extends React.Component {
     componentDidMount() {
         let eersteCardAan = true 
         let eersteCardId = -1
-        productsObject.products.map(product => {
+        productsVriendenObject.productsVrienden.map(product => {
             if(eersteCardAan){
                 eersteCardId = product.id
                 eersteCardAan = false
             }
         });
-        this.setState({productCards: productsObject.products}, () => {
+        this.setState({productCards: productsVriendenObject.productsVrienden}, () => {
             this.onCardClicked(eersteCardId);
         });
     }
@@ -64,20 +64,13 @@ class Dashboard extends React.Component {
 
     render() {
         return (
-            <article className="dashboard">
-                <section className="dashboard__grid1">
+            <article className="dashboardVrienden">
+                <section className="dashboardVrienden__grid1">
                 </section>
-                <section className="dasboard__grid2">
-                    <Popup editable={this.state.allowEdit} editButtonClicked={this.editButtonClicked}
-                           editMode={this.state.editMode} cardClicked={this.state.cardClicked}
-                           addButtonClicked={this.addButtonClicked}/>
-                    <button onClick={this.toggleEditMode} className="dashboard__button">Toggle edit mode</button>
+                <section className="dashboardVrienden__grid2">
+                    <MijnPokemonVrienden productCards={this.state.productCards} headerText="Daniele's Producten"></MijnPokemonVrienden>
                 </section>
-                <section className="dasboard__grid1">
-                    <MijnPokemon onProductCardClicked={this.onCardClicked} onButtonClicked={this.onButtonClicked}
-                                 productCards={this.state.productCards} headerText="Mijn Producten"></MijnPokemon>
-                </section>
-                <section className="dasboard__grid3">
+                <section className="dashboardVrienden__grid3">
                     <Vrienden imageForm="friend.jpg"/>
                 </section>
             </article>
@@ -86,4 +79,4 @@ class Dashboard extends React.Component {
 }
 
 
-export default Dashboard;
+export default DashboardVrienden;
