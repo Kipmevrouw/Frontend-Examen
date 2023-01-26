@@ -73,7 +73,7 @@ const LoginForm = (props) => {
 
         <div className="app">
         <div className="login-form">
-          {isSubmitted ? <div><a href="/Collectiepage" className="Collectie__klikhier">Klik hier</a> om naar je collectiepagina te gaan.</div> : renderForm}
+          {isSubmitted ? <div><a href="/Collectiepage/becky" className="Collectie__klikhier">Klik hier</a> om naar je collectiepagina te gaan.</div> : renderForm}
         </div>
       </div>
     );
