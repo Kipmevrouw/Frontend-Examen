@@ -5,28 +5,44 @@
     display:grid;
     border-radius:1rem;
     grid-template-rows:10% 60% 30%;
-    grid-template-columns: 30% 60% 1fr;
+    grid-template-columns: 5% 30% 55% 1fr;
 }
 
 .dasboard__grid1{
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 2;
 }
 
 .dasboard__grid2{
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
     padding: 5rem;
-
+    width:50rem;
+    height:60rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:1rem;
+    flex-direction: column;
+    gap:2rem;
+    transition: 0.8s all;
+    background: url("/public/img/filterachtergrondfotos.png");
 }
 
 .dasboard__grid3{
     grid-column-start: 3;
     grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.dasboard__grid4{
+    grid-column-start: 4;
+    grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 4;
 }
@@ -46,4 +62,20 @@
 .dashboard__button:hover{
     background: rgb(0, 50, 158);
     cursor: pointer;
+}
+
+@media screen and (max-width:1500px){
+    .dashboard{
+    height: 100%;  
+    background:linear-gradient(rgba(255, 190, 70, 0.9), rgba(255, 255, 255, 10)), url("/public/img/filter achtergrond.jpg");    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.dashboard__grid4{
+    justify-content: flex-start;
+
+}
 }

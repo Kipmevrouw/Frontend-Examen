@@ -18,7 +18,7 @@ const MijnPokemon = ({headerText, buttonSymbol, buttonText, productCards, onButt
         <section className="productsWrapper">
             
             <header className="headerCollectie">
-                <h1 className="headerCollectie__h1">Mijn producten</h1>
+                <h1 className="headerCollectie__h1">Mijn pokemons</h1>
             </header>
             <ul className="productsList">
                 {productCardsToBeRendered}
