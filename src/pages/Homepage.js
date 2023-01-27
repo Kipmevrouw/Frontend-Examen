@@ -18,7 +18,7 @@ const HomePage = () => {
                 nav3="Features"
                 nav4="Abbonementen"
                 nav5="Contact"
-                image="logo.png"
+                image="logo.webp"
                 buttonText="Login" />
             <Header
                 bigTitle="PokemonCards"
@@ -33,34 +33,34 @@ const HomePage = () => {
                                   pakjes verkoop. Dit is wat je kunt doen hier: je neemt een abbonement
                                   op pokemonkaartjes en je krijgt per week een pakje pokemonkaartje opgestuurd
                                   "
-                imageM="Cards.jpg"  >
+                imageM="Cards.webp"  >
 
             </Overons>
-            <Art imageA="Favo.png">
+            <Art imageA="Favo.webp">
 
             </Art>
             <Features 
-                imageBulbasaur="bulbasaur.png"
-                imagePoliwrath="polli.png"
-                imageGengar="gengar.png"
-                imageLapras="lap.png"
-                imageDitto="ditto.png"
+                imageBulbasaur="bulbasaur2.webp"
+                imagePoliwrath="polli.webp"
+                imageGengar="gengar.webp"
+                imageLapras="lap.webp"
+                imageDitto="ditto.webp"
             
             >
             </Features>
             <Abbonement hoofdTitel="Abbonementen">
-                <Card image="evolving.png"
+                <Card image="evolving.webp"
                     prijs="Per maand = €12,99"
                     extra="Ontvang per maand 2 pokemonpakjes."
                     buttonCard="Medium"
                 />
                 <Card2
-                    image="battlestyles.png"
+                    image="battlestyles.webp"
                     prijs="Per maand = €21,99"
                     extra="Ontvang per maand 4 pokemonpakjes."
                     buttonCard="Premium"
                 />
-                <Card image="Brilliant stars.png"
+                <Card image="BrilliantStars.webp"
                     prijs="Per maand = €6,99"
                     extra="Ontvang per maand 1 pokemonpakje."
                     buttonCard="Basic"
@@ -68,7 +68,7 @@ const HomePage = () => {
 
             </Abbonement>
             <Contact 
-            imageF="ring.jpg"
+            imageF="ring.webp"
             >
             </Contact>    
             <Footer 

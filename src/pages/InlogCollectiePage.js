@@ -11,10 +11,10 @@ const InlogCollectiePage = () => {
                 nav3="Features"
                 nav4="Abbonementen"
                 nav5="Contact"
-                image="logo.png"
+                image="logo.webp"
                 buttonText="Login" />
             <LoginForm 
-            imageForm="InlogFoto.jpg"
+            imageForm="InlogFoto.webp"
             />
             <Footer
             buttonText="Login"

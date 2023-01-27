@@ -8,7 +8,7 @@
     flex-direction: column;
     gap:2rem;
     transition: 0.8s all;
-    background: url("/public/img/filterachtergrondfotos.png");
+    background: url("/public/img/filterachtergrondfotos.webp");
 }
 
 .productsList__item--gray:hover{

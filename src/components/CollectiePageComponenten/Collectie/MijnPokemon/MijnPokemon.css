@@ -20,3 +20,13 @@
     gap:4rem;
     flex-wrap:wrap;
 }
+.Collection__dropdown{
+    padding-bottom: 2rem;
+}
+.dropdown__select{
+    padding: 1rem 4rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+    border-style: none;
+    background: rgba(255, 190, 70, 0.9);
+}

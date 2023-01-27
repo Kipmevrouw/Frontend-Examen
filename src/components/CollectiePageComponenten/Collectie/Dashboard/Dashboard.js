@@ -78,7 +78,7 @@ class Dashboard extends React.Component {
                                  productCards={this.state.productCards} headerText="Mijn Producten"></MijnPokemon>
                 </section>
                 <section className="dasboard__grid4">
-                    <Vrienden imageForm="friend.jpg"/>
+                    <Vrienden imageForm="friend.webp"/>
                 </section>
             </article>
         );

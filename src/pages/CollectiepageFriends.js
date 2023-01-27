@@ -10,7 +10,7 @@ const CollectiepageFriends = () => {
                 nav2="Backlog"
                 nav3="Contact"
                 nav4="Uitloggen"
-                image="logo.png"
+                image="logo.webp"
                 buttonText="Delen"
             />
             <DashboardVrienden

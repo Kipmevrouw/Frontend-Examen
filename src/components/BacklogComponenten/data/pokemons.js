@@ -1,14 +1,14 @@
-import venusaurImage from "../../../img/venusaur.png";
-import charizardImage from "../../../img/charizard.png";
-import blastoiseImage from "../../../img/blastoise.png";
-import ivysaurImage from "../../../img/ivysaur.png";
-import charmanderImage from "../../../img/charmander.png";
-import charmeleonImage from "../../../img/charmeleon.png";
-import squirtleImage from "../../../img/squirtle.png";
-import wartortleImage from "../../../img/wartortle.png";
-import pikachuImage from "../../../img/pikachu.png";
-import raichuImage from "../../../img/raichu.png";
-import bulbasaurImage from "../../../img/bulbasaur.png";
+import venusaurImage from "../../../img/venusaur.webp";
+import charizardImage from "../../../img/charizard.webp";
+import blastoiseImage from "../../../img/blastoise.webp";
+import ivysaurImage from "../../../img/ivysaur.webp";
+import charmanderImage from "../../../img/charmander.webp";
+import charmeleonImage from "../../../img/charmeleon.webp";
+import squirtleImage from "../../../img/squirtle.webp";
+import wartortleImage from "../../../img/wartortle.webp";
+import pikachuImage from "../../../img/pikachu.webp";
+import raichuImage from "../../../img/raichu.webp";
+import bulbasaurImage from "../../../img/bulbasaur.webp";
 
 export const pokemons = [
     {

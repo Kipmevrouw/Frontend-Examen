@@ -1,7 +1,7 @@
 .display{
     width:40rem;
     height: 20rem;
-    background: url("/public/img/filterachtergrondfotos.png");
+    background: url("/public/img/filterachtergrondfotos.webp");
     padding:4rem;
     display:flex; 
     border-radius: 4rem;

@@ -1,9 +1,9 @@
-import venusaurImage from "../../../img/venusaur.png";
-import charizardImage from "../../../img/charizard.png";
-import blastoiseImage from "../../../img/blastoise.png";
-import charmanderImage from "../../../img/charmander.png";
-import squirtleImage from "../../../img/squirtle.png";
-import bulbasaurImage from "../../../img/bulbasaur.png";
+import venusaurImage from "../../../img/venusaur.webp";
+import charizardImage from "../../../img/charizard.webp";
+import blastoiseImage from "../../../img/blastoise.webp";
+import charmanderImage from "../../../img/charmander.webp";
+import squirtleImage from "../../../img/squirtle.webp";
+import bulbasaurImage from "../../../img/bulbasaur.webp";
 const productsVrienden =  [
     {
         id: 1,

@@ -42,7 +42,7 @@ export default function NavigationHomepage(props){
           </section>
           <section className="navigation__mobiel">
               <div onClick={toggleHamburger}>
-                    <Hamburger image="logo.png"/> 
+                    <Hamburger image="logo.webp"/> 
             </div>
             <figure class="navigation__logo">
               <img className="nav__img" src={"/img/" + props.image} alt="Pokemon logo"/>
